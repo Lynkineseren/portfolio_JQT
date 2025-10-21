@@ -1,0 +1,453 @@
+
+/* TYPOGRAPHY */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* VARIABLES */
+/* ___________________________________ */
+
+:root {
+    /* farver */
+    --whiteWarm: #FAF9F7;
+    --font: #2B2B2B;
+    --mallardBlue: #264653;
+    --elegantBurgundyRed: #7B2C2C;
+    --warmMustardYellow: #E9C46A;
+    --earthyTerracotta: #F4A261;
+    --oliveGreenHerbal: #8D8741;
+    --NeutralGrey: #DAD7CD;
+    --waveBlue: #4169E1;
+    --cakeColor: #D2A730;
+    --forestGreen: #57D55B;
+    --christmasRed: #D4213F;
+    --healthyGreen: #0BAC61;
+
+    /* skrift størrelser */
+    --fs_h1_desktop: 2.25rem;
+    --fs_h2_desktop: 2.5rem;
+    --fs_nav_desktop: 1.5rem;
+    --p_desktop: 1.375rem;
+    --card_button_text_desktop: 1.25rem;
+
+    /* font tykkelse */
+    --fs_bold: 700;
+    --fs_semibold: 600;
+    --fs_medium: 500;
+    --fs_regular: 400;
+
+    /* spacere */
+    --sektion_spacer_desktop: 6.25rem;
+    --text_spacer_desktop: 1.875rem;
+    --margin_desktop: 15.625rem;
+    --gap: 1.875rem;
+
+    /* border radius */
+    --border_radius_cards: 5px;
+    --border_radius_buttons: 10px;
+}
+
+
+/* GENERAL STYLING */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    font-family: "Oswald", Arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Raleway', Arial, sans-serif;
+}
+
+
+
+p, footer {
+    font-family: "Karla", Arial, sans-serif;
+    font-size: var(--fs_nav_desktop);
+}
+
+/* Navigation */
+
+nav {
+    height: 75px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu ul {
+    display: flex;
+    gap: 200px;
+}
+
+.menu ul li {
+    list-style-type: none;
+    color: white;
+    transition: transform 0.2s ease;
+}
+
+.menu ul li:hover {
+    transform: scale(1.1);
+}
+
+.menu li a {
+    text-decoration: none;
+    color: black;
+    font-family: "Oswald", Arial, sans-serif ;
+    font-size: var(--fs_nav_desktop);
+}
+
+.menu a.active {
+    color: var(--waveBlue);
+    font-weight: bold;
+}
+
+.menu li a:hover {
+    text-decoration: underline;
+}
+
+.line {
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    border: none;
+    margin-bottom: 3rem;
+}
+
+/* Index/Homepage kodes her */
+
+.front_page_section_one {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+    position: relative;
+    gap: 1rem;
+}
+
+.front_page_section_one h1, .front_page_section_one h2  {
+    justify-content: center;
+    color: var(--waveBlue);
+    font-size: var(--fs_h1_desktop);
+}
+
+.front_page_section_one_text {
+    padding-top: 2rem;
+    flex-direction: column;
+    font-family:'Raleway', Arial, sans-serif;
+}
+
+.front_page_section_one_text p {
+    padding-top: 1rem;
+}
+
+.front_page_section_one_text h2 {
+    font-weight: 300;
+}
+
+.button {
+    margin-top: 0.5rem;
+    background-color: var(--waveBlue);
+    border: none;
+    border-radius: 5px;
+    align-items: center;
+    padding: 0.75rem;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease-in-out;
+    }
+    
+.button:hover {
+    transform: scale(1.1);
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
+    }
+
+.button a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Karla', Arial, sans-serif;
+    font-size: var(--fs_nav_desktop);
+}
+
+.two_image_section {
+    display: flex;
+    width: 100%;
+    height: 70vh;
+    overflow: hidden;
+}
+
+.image_block {
+    position: relative;
+    flex: 1;
+    overflow: hidden;
+}
+
+.image_block img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+.image_block:last-child img {
+    object-position: top center;
+}
+
+.image_block .button {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--waveBlue);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-family: 'Karla', Arial, sans-serif;
+    font-size: var(--fs_nav_desktop);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease-in-out;
+    z-index: 2;
+}
+
+.image_block .button:hover {
+    transform: scale(1.1);
+}
+
+.case_studies_section {
+    text-align: center;
+    padding: 3rem 1rem;
+}
+
+.case_studies_section h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: var(--waveBlue);
+}
+
+
+.case_studies_cards {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.case_studies_cards a { 
+    text-decoration: none;
+}
+
+.card {
+    flex: 1 1 250px;
+    max-width: 300px;
+    text-align: left;
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    margin: 0.5rem auto;
+    display: block;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card h3 {
+    margin: 0 0 0.5rem 0;
+    text-align: left;
+    font-size: 1.2rem;
+}
+
+.case_studies_cards .card:nth-child(1) h3 {
+    color: var(--cakeColor);
+}
+
+.case_studies_cards .card:nth-child(1) img {
+    border: 5px solid var(--cakeColor);
+}
+
+.case_studies_cards .card:nth-child(2) h3 {
+    color: var(--forestGreen);
+}
+
+.case_studies_cards .card:nth-child(2) img {
+    border: 5px solid var(--forestGreen);
+}
+
+.case_studies_cards .card:nth-child(3) h3 {
+    color: var(--christmasRed);
+}
+
+.case_studies_cards .card:nth-child(3) img {
+    border: 5px solid var(--christmasRed);
+}
+
+/* Overview page kodes her */
+.projects-section {
+    background: linear-gradient(to right, #eaeaea, #7698FF, #4169E1);
+    padding: 60px 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 30vh;
+}
+
+.content {
+    max-width: 600px;
+    margin-left: 5%;
+}
+
+h1 {
+    color: #4a6cf7;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    font-size: var(--fs_h1_desktop);
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1.2rem;
+    font-size: var(--fs_nav_desktop);
+}
+
+.overview_case_studies_cards {
+    display: grid;
+    grid-template-columns: repeat(2, 260px);
+    justify-content: center;
+    gap: 6rem;
+}
+
+.overview_case_studies_cards a {
+    text-decoration: none;
+}
+
+.overview_case_studies_cards .card h3 {
+    margin: 0 0 0.5rem 0;
+    text-align: left;
+    font-size: 1.2rem;
+}
+
+.overview_case_studies_cards .card img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
+
+.overview_case_studies_cards .card:nth-child(1) h3 {
+    color: var(--waveBlue);
+}
+
+.overview_case_studies_cards .card:nth-child(1) img {
+    border: 5px solid var(--waveBlue);
+}
+
+.overview_case_studies_cards .card:nth-child(2) h3 {
+    color: var(--cakeColor);
+}
+
+.overview_case_studies_cards .card:nth-child(2) img {
+    border: 5px solid var(--cakeColor);
+}
+
+.overview_case_studies_cards .card:nth-child(3) h3 {
+    color: var(--forestGreen);
+}
+
+.overview_case_studies_cards .card:nth-child(3) img {
+    border: 5px solid var(--forestGreen);
+}
+
+.overview_case_studies_cards .card:nth-child(4) h3 {
+    color: var(--christmasRed);
+}
+
+.overview_case_studies_cards .card:nth-child(4) img {
+    border: 5px solid var(--christmasRed);
+}
+
+.overview_case_studies_cards .card:nth-child(5) h3 {
+    color: var(--healthyGreen);
+}
+
+.overview_case_studies_cards .card:nth-child(5) img {
+    border: 5px solid var(--healthyGreen);
+}
+
+.kontakt_CTA {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.kontakt_CTA p {
+    margin-bottom: 0;
+}
+
+.kontakt_CTA button {
+    margin-bottom: 1.2rem;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: var(--waveBlue);
+    color: #ffffff;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    font-family: "Karla", Arial, sans-serif;
+}
+
+.footer_row {
+    display: flex;
+    justify-content: space-around;
+    gap: 10rem;
+    flex-wrap: wrap;
+}
+
+.quick_shortcuts {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: flex-start;
+}
+
+.quick_shortcuts a {
+    text-decoration: none;
+    color: var(--whiteWarm);
+    font-size: 0.9rem;
+}
+
+.quick_shortcuts a {
+    display: flex;
+}
+
+
+.icons {
+    display: flex;
+    gap: 0.75rem;
+}
+
+.icons a {
+    font-size: 2.5rem;
+}
+

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="utf-8" />
+  <title>SVG stroke animation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body{
+      margin:0; min-height:100svh; display:grid; place-items:center; gap:1rem;
+      background:#afbfaf; color:#e6eef7; font:16px/1.4 system-ui, sans-serif;
+    }
+    .wrap{display:flex; flex-direction:column; align-items:center; gap:1rem}
+    svg{
+      width:min(92vw, 900px); height:auto; background:none; border-radius:.5rem;
+    }
+    .st0 {
+      fill: none;
+      stroke: #231f20;
+      stroke-miterlimit: 10;
+      stroke-width: 15px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 595.28 841.89">
+      <path id="path1" class="st0" d="M191.34,132.63l.09,83.68c0,7.48.01,15-1.25,22.37-1.36,7.94-4.86,16.39-12.18,19.74-2.02.92-4.22,1.39-6.43,1.68-7.73.99-16.05-.45-22.13-5.34s-9.3-13.61-6.49-20.88"/>
+      <path id="path2" class="st0" d="M241.12,157.59c-11.73,19.45-12.2,43.41-12.34,66.12-.03,5.35-.05,10.81,1.66,15.88,3.79,11.25,16.44,18.49,28.2,16.83,12.37-1.75,21.99-11.6,29.11-21.87,2.11-3.05,4.1-6.2,5.72-9.53,7.48-15.39,6.64-33.34,5.64-50.42-.67-11.34-8.69-31.17-20.03-36.54-14.48-6.84-31.22,8.35-37.96,19.53Z"/>
+      <path id="path3" class="st0" d="M274.73,233.37c9.8,7.05,16.86,17.8,19.46,29.58"/>
+      <line id="path4" class="st0" x1="324.8" y1="137.95" x2="405.94" y2="136.35"/>
+      <line id="path5" class="st0" x1="363.79" y1="137.18" x2="366.34" y2="266.17"/>
+    </svg>
+  </div>
+
+  <script>
+    const svg = document.querySelector('svg');
+    const path1 = svg.getElementById('path1');
+    const path2 = svg.getElementById('path2');
+    const path3 = svg.getElementById('path3');
+    const path4 = svg.getElementById('path4');
+    const path5 = svg.getElementById('path5');
+
+    console.log(path1.getTotalLength()); 
+
+    function hideStroke(el){
+      const totalLength = el.getTotalLength();
+      el.style.strokeDasharray = totalLength;
+      el.style.strokeDashoffset = totalLength;
+    }
+
+    function animateStroke(el, duration, easing){
+      const totalLength = el.getTotalLength();
+      const anim = el.animate(
+        [
+          { strokeDashoffset: totalLength },
+          { strokeDashoffset: 0 }
+        ],
+        { duration, easing, fill: 'forwards' }
+      );
+      return anim.finished;
+    }
+
+    async function playSequence(){
+      await animateStroke(path1, 800, 'ease-in-out');
+      await animateStroke(path2, 800, 'ease-in-out');
+      await animateStroke(path3, 800, 'ease-in-out');
+      await animateStroke(path4, 800, 'ease-in-out');
+      await animateStroke(path5, 800, 'ease-in-out');
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+      [path1, path2, path3, path4, path5].forEach(hideStroke);
+      playSequence();
+    });
+  </script>
+</body>
+</html>

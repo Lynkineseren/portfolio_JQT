@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQT's Portfolio | Homepage </title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <script src="./assets/js/app.js" defer> </script>
+<style>
+  body {
+    margin: 0;
+    min-height: 100svh;
+    display: grid;
+    place-items: center;
+    background: #afbfaf;
+    font: 16px/1.4 system-ui, sans-serif;
+    overflow: hidden;
+  }
+
+  .wrap {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    max-width: 900px;
+  }
+
+  /* Stroke SVG */
+  #Layer_1 {
+    width: 92vw;
+    max-width: 900px;
+    height: auto;
+    background: none;
+    z-index: 2;
+    position: relative;
+  }
+
+  .st0 {
+    fill: none;
+    stroke: #231f20;
+    stroke-miterlimit: 10;
+    stroke-width: 15px;
+  }
+
+  /* Pulsing Blob (mask container) */
+  .blobSVG {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: auto;
+    z-index: 0;
+  }
+
+  .blobOuter {
+    fill: #020203;
+    fill-opacity: 0.4;
+    transform-origin: 50% 50%;
+    animation: pulseOuter 10000ms ease-in-out infinite;
+  }
+
+  .blobInner {
+    fill: #020203;
+    transform-origin: 50% 50%;
+    animation: pulseInner 10000ms ease-in-out infinite;
+  }
+
+  @keyframes pulseInner {
+    0% { transform: scale(0.9, 1); }
+    50% { transform: scale(1, 0.9); }
+    100% { transform: scale(0.9, 1); }
+  }
+
+  @keyframes pulseOuter {
+    0% { transform: scale(1, 0.9); }
+    50% { transform: scale(0.9, 1); }
+    100% { transform: scale(1, 0.9); }
+  }
+
+  .maskedGIF {
+    width: 200px;
+    height: auto;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <svg class="blobSVG" viewBox="0 0 595.3 452.9" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <clipPath id="blobClip">
+        <path id="innerBlob" d="M309.4,63.7c202.4,25.4,231,117.8,231,176.8s-59.6,125.1-231,176.8c-105.5,31.7-169.9-85.2-214.9-171.8C14.3,91.5,118.6,39.8,309.4,63.7Z" />
+      </clipPath>
+    </defs>
+
+    <path id="outerBlob" class="blobOuter" d="M330.9,43.2c221.8,54.1,241.8,160.5,234.3,226.1-7.5,65.6-82.2,131.5-279.4,167.1-121.4,21.8-178.1-116.4-217-218.5C-.8,36.5,121.8-7.7,330.9,43.2Z"/>
+
+    <image href="./assets/img/starmie.gif" width="595.3" height="452.9" clip-path="url(#blobClip)" />
+  </svg>
+
+</div>
+
+<script>
+const svg = document.getElementById('Layer_1');
+const paths = ['path1','path2','path3','path4','path5'].map(id => svg.getElementById(id));
+
+function hideStroke(el){
+  const totalLength = el.getTotalLength();
+  el.style.strokeDasharray = totalLength;
+  el.style.strokeDashoffset = totalLength;
+}
+
+function animateStroke(el, duration, easing){
+  const totalLength = el.getTotalLength();
+  const anim = el.animate(
+    [
+      { strokeDashoffset: totalLength },
+      { strokeDashoffset: 0 }
+    ],
+    { duration, easing, fill: 'forwards' }
+  );
+  return anim.finished;
+}
+
+async function playSequence(){
+  for(const path of paths){
+    await animateStroke(path, 800, 'ease-in-out');
+  }
+}
+
+window.addEventListener('DOMContentLoaded', () => {
+  paths.forEach(hideStroke);
+  playSequence();
+});
+</script>
+</body>
+</html>
