@@ -1,59 +1,827 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JQT's Portfolio | Homepage </title>
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-    <script src="./assets/js/app.js" defer> </script>
-
-</head>
-<body>
-    <header>
-    <!-- Navigation med Plated logo, titler på undersider, searchbar og search icon  -->
-        <nav>
-            <div class="menu">
-                <ul>
-                    <li><a href="index.html"><strong>Forside</strong></a></li>
-                    <li><a href="overview.html">Case Studies</a></li>
-                    <li><a href="omMig.html">Om Mig</a></li>
-                    <li><a href="kontaktMig.html">Kontakt</a></li>
-                </ul>
-            </div>
-        </nav>
-        <div class="line"></div>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JQT's Portfolio | Homepage</title>
+    <link rel="stylesheet" href="./assets/css/portfolio.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <script src="./assets/js/script.js" defer></script>
+  </head>
+  <body>
+    <header id="top">
+      <nav class="main-nav">
+        <div class="menu">
+          <ul>
+            <li><a href="index.html">Forside</a></li>
+            <li>
+              <a href="overview.html" class="active"
+                ><strong>Case Studies</strong></a
+              >
+            </li>
+            <li><a href="omMig.html">Om Mig</a></li>
+            <li><a href="kontaktMig.html">Kontakt</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="line"></div>
     </header>
-    
+
+    <main>
+      <section class="breadcrumb">
+        <div>
+          <p>
+            <a href="./overview.html"
+              ><strong
+                ><i class="fa-solid fa-arrow-left"></i> Tilbage til case studies
+                oversigt</strong
+              ></a
+            >
+          </p>
+        </div>
+      </section>
+
+      <section class="projects-section-festival fade-in-left">
+        <div class="content">
+          <h1>Den Blå Festival</h1>
+          <p>
+            Opgaven her var at designe og udvikle en webapp til de besøgende på
+            Den Blå Festival. Hovedvægten i opgaven lå på indhold,
+            informationsdesign og informationsarkitektur, samt UI-design.
+          </p>
+          <br />
+          <p>
+            Slutproduktet skulle være en fungerende kodet prototype, der er
+            high-fidelity både i forhold til indhold, design og, delvist,
+            funktioner via JS.
+          </p>
+        </div>
+        <div>
+          <img
+            class="fade-in-left"
+            src="./assets/img/guitar_player.png"
+            alt="guitarist på scene"
+          />
+        </div>
+      </section>
+
+      <section class="research-section">
+        <div class="research-wrap">
+          <aside class="research-nav">
+            <nav>
+              <p><strong>Indholdsfortegnelse</strong></p>
+              <ul>
+                <li><a href="#personas">Personas</a></li>
+                <li><a href="#situationer">Situation/scenarier</a></li>
+                <li><a href="#desk_research">Desk Research</a></li>
+                <li><a href="#segmentering">Segmentering</a></li>
+                <li><a href="#interviewguide">Interviewguide</a></li>
+                <li><a href="#kundemoede">Kundemøde</a></li>
+                <li><a href="#designsprint">Designsprint</a></li>
+                <li><a href="#braindump">Braindump</a></li>
+                <li><a href="#affinity_diagram">Affinity Diagram</a></li>
+                <li><a href="#content_sitemap">Content Sitemap</a></li>
+                <li><a href="#wireframe">Wireframe</a></li>
+                <li><a href="#mock_ups">Mock-ups</a></li>
+                <li><a href="#kodning">Kodning</a></li>
+              </ul>
+            </nav>
+          </aside>
+
+          <section class="research-content">
+            <section id="personas" class="accordion">
+              <h2>Personas</h2>
+              <p>
+                De 2 nedstående personas blev brugt til at skabe en bedre
+                forståelse af vores målgruppes behov, samt deres prioriteter,
+                ønsker og adfærd på et musik webapp. De vil fungerer som en form for guide i brugerens perspektiv i designprocessen.
+              </p>
+              <div class="accordion-box">
+                <button class="accordion-toggle">
+                  <span class="accordion-text">Se mere om Personas</span>
+                  <i class="fa-solid fa-arrow-down arrow"></i>
+                </button>
+                <div class="accordion-content">
+                  <div class="persona-card">
+                    <img
+                      src="./assets/img/freja.png"
+                      alt="Persona 1"
+                      class="persona-image"
+                    />
+                    <div class="persona-info">
+                      <ul>
+                        <li><strong>Navn:</strong> Freja</li>
+                        <li><strong>Alder:</strong> 23</li>
+                        <li><strong>Civilstatus:</strong> Single</li>
+                        <li><strong>Børn:</strong> Hendes planter</li>
+                        <li>
+                          <strong>Bopæl:</strong> Aalborg, studie­lejlighed i
+                          Vestbyen
+                        </li>
+                        <li><strong>Uddannelse:</strong> Musik</li>
+                        <li>
+                          <strong>Motivation:</strong> Miljø, kultur, udvide sin
+                          musikalske horisont
+                        </li>
+                        <li>
+                          <strong>Mål:</strong> Fordybe sin viden om musik
+                        </li>
+                        <li>
+                          <strong>Udfordring:</strong> Økonomisk udfordret til
+                          at opleve de ting hun gerne vil
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="persona-card">
+                    <img
+                      src="./assets/img/rasmus.png"
+                      alt="Rasmus"
+                      class="persona-image"
+                    />
+                    <div class="persona-info">
+                      <ul>
+                        <li><strong>Navn:</strong> Rasmus</li>
+                        <li><strong>Alder:</strong> 29</li>
+                        <li>
+                          <strong>Civilstatus:</strong> Forlovet med Frederikke
+                        </li>
+                        <li><strong>Børn:</strong> 0</li>
+                        <li>
+                          <strong>Bopæl:</strong> Aalborg, Eternitten, nyopført
+                          lejlighedskompleks fra 2020 med sin kæreste
+                        </li>
+                        <li>
+                          <strong>Mål:</strong> Gode oplevelser med Frederikke.
+                          Nyde livet med sine nærmeste
+                        </li>
+                        <li><strong>Udfordring:</strong> Workaholic</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section id="situationer" class="accordion">
+              <h2>Situation/scenarier</h2>
+              <p>
+                Ud fra de 2 personaer var der lavet scenarier og situationer for
+                hver, og beskriver, forløbet fra starten af de finder frem til
+                webappen og deres brugssituation. Dette vil hjælpe os med at
+                opdage, hvordan brugerne interagerer med webappen og forstå
+                deres motivation og handlinger, så vi kan træffe design- og
+                funktionalitets beslutninger, der er bedre tilpasset deres
+                præferencer og behov.
+              </p>
+              <div class="accordion-box">
+                <button class="accordion-toggle">
+                  <span class="accordion-text"
+                    >Se mere om Situation/scenarier</span
+                  >
+                  <i class="fa-solid fa-arrow-down arrow"></i>
+                </button>
+                <div class="accordion-content">
+                  <div class="scenario-block freja-situation">
+                    <h3>Freja's situation</h3>
+                    <p>
+                      I messengergruppen for hendes studie skriver en ven om Den
+                      Blå Festival. Freja er begyndt at lytte til jazz og bliver
+                      nysgerrig. Hun læser at jazz gør sig særligt godt live og
+                      googler “Jazz i Aalborg”.
+                    </p>
+                    <p>
+                      Da jazz bruges meget på hendes arbejde, har hun det på
+                      sinde. En varm onsdag får hun en notifikation om
+                      festivalen og googler “Den Blå Festival”. Hun åbner
+                      forventningsfuldt den nye webapp.
+                    </p>
+                    <p>
+                      En anden dag efter arbejde googler hun igen jazz i Aalborg
+                      og finder festivalens webapp, som hun klikker ind på for
+                      at læse mere.
+                    </p>
+                  </div>
+
+                  <div class="scenario-block freja-scenario">
+                    <h3>Freja's scenarie</h3>
+                    <p>
+                      Freja sidder på altanen med iskaffe og surdejsbolle, da
+                      hun får en besked fra Sofus om Den Blå Festival. Han
+                      foreslår fredag aften og sender et link til webappen.
+                      Freja klikker og åbner appen på sin telefon.
+                    </p>
+                    <p>
+                      Hun ser en header med festivalens navn, en burger-menu og
+                      sektioner for Jazz og Blues med karuseller. Hun klikker på
+                      “Se det fulde program” og kommer til en side med
+                      filtrering: genre, dage og venues.
+                    </p>
+                    <p>
+                      Freja vælger fredag og finder koncerter efter kl. 19.00.
+                      Hun tager et screenshot og sender det til gruppen. Hun
+                      venter spændt på svar, mens hun nyder musikken fra Wet Leg
+                      og sin iskaffe.
+                    </p>
+
+                    <h4>Freja's potentielle udfordringer</h4>
+                    <ul>
+                      <li>Wayfinding – manglende relevant filtrering</li>
+                      <li>Manglende data for bord/billetbooking</li>
+                      <li>Dårlig informationsarkitektur</li>
+                      <li>Mangel på information</li>
+                    </ul>
+                  </div>
+
+                  <!-- Rasmus' scenarie -->
+                  <div class="scenario-block rasmus-scenario">
+                    <h3>Rasmus’ scenarie</h3>
+                    <p>
+                      Rasmus sidder med sin HD2-uddannelse og keder sig. Han får
+                      en besked fra et vennepar om Den Blå Festival og spørger
+                      Frederikke, som gerne vil med fredag. Han googler
+                      festivalen og finder webappen.
+                    </p>
+                    <p>
+                      På forsiden ser han Jazz og Blues, men klikker på “Se det
+                      fulde line-up”. Han bruger filtrering: genre, venues og
+                      dage. Han vælger fredag og finder to events, som han
+                      sender til venneparret.
+                    </p>
+                    <p>
+                      Venneparret foreslår “El Mariachi” pga. mad og musik.
+                      Rasmus og Frederikke bekræfter og planlægger aftenen, mens
+                      de ser “Hammerslag” i sofaen.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section id="desk_research" class="accordion">
+              <h2>Desk Research</h2>
+              <p>
+                Brugerdata relateret til musik og festivaler skaber grundlaget
+                for optimeringen og redesignet af Den Blå Festival webapp, så vi
+                i højere grad rammer den korrekte målgruppe og deres behov. Vi
+                vil samtidig optimere brugervenligheden ved at få afklaret,
+                hvilke informationer og funktioner, der er vigtigst for
+                brugerne.
+              </p>
+              <div class="accordion-box">
+                <button class="accordion-toggle">
+                  <span class="accordion-text">Se mere om Desk Research</span>
+                  <i class="fa-solid fa-arrow-down arrow"></i>
+                </button>
+                <div class="accordion-content">
+                  <p>
+                    Ud fra desk research fundet gennem Danmarks Statistikker, viser de forskellige aspekter af musik- og koncertdeltagelse i Danmark. F.x at mange danskere søger koncerter uden for de klassiske kategorier. Musikfestivaler tiltrækker 19,86 % af publikum, mens spillesteder tegner sig for 9,90 %, regionale spillesteder for 8,66 % og kulturhuse for 7,48 %. Folkekirker tiltrækker færrest med 5,32 %, og musikforeninger står for 4,13 % af publikum. 
+                  </p>
+
+                  <br>
+
+                  <p>Generelt sagt har Danmark en rig tradition for musikfestivaler, der spænder fra små, niche-orienterede events til store internationale festivaler. Festivalerne dækker stort set alle musikgenrer: pop, rock, elektronisk, jazz, klassisk og folkemusik.</p>
+                  
+                </div>
+              </div>
+            </section>
+
+            <section id="segmentering" class="accordion">
+              <h2>Segmentering</h2>
+              <p>
+                Vi lavede en segmentering for at finde vores målgruppe, hvorved
+                vi inddrager relevante kilder såsom statistikker og
+                brugerundersøgelser, der underbygger begrundelsen for valget af
+                målgruppen.
+              </p>
+              <div class="accordion-box">
+                <button class="accordion-toggle">
+                  <span class="accordion-text">Se mere om Segmentering</span>
+                  <i class="fa-solid fa-arrow-down arrow"></i>
+                </button>
+                <div class="accordion-content">
+                  <p>
+                    Festivalens primære målgruppe bor i Aalborg og omegn både
+                    lokale byboere og turister med interesse for musik.
+                    Aldersgruppen spænder fra 18 til 60 år, med en overvægt af
+                    personer med mellemlang til lang videregående uddannelse.
+                  </p>
+                  <br />
+                  <p>
+                    Webappen skal derfor appellere til både studerende som Freja
+                    og etablerede voksne som Rasmus, med funktioner der er
+                    intuitive og tilgængelige på tværs af alder og teknisk
+                    erfaring.
+                  </p>
+                  <img
+                    src="./assets/img/segmentering.png"
+                    alt="Segmentering af musik festival"
+                    class="accordion-image"
+                  />
+                </div>
+              </div>
+            </section>
+
+            <section id="interviewguide" class="accordion">
+              <h2>Interviewguide</h2>
+              <p>
+                Vi udarbejdede en interviewguide med udgangspunkt i Kvale og
+                Brinkmanns 7 faser af en interviewundersøgelse, hvilket skabte
+                et solidt grundlag for formuleringen af relevante spørgsmål.
+              </p>
+              <div class="accordion-box">
+                <button class="accordion-toggle">
+                  <span class="accordion-text">Se mere om Interviewguide</span>
+                  <i class="fa-solid fa-arrow-down arrow"></i>
+                </button>
+                <div class="accordion-content">
+                  <p>
+                    <strong>Hypotese:</strong> Der antages at vigtigheden
+                    varierer mellem det musikalske og det sociale. Det kommer an
+                    på hvad deltageren vægter højest.
+                  </p>
+                  <br />
+                  <p>
+                    <strong>Formål:</strong> formålet med vores interviews er at
+                    blive klogere på, folk der deltager i musikfestivaler og
+                    lokale arrangementer. Vi vil gerne vide, hvad der er vigtigt
+                    for dem når det kommer til musik oplevelser og koncerter.
+                  </p>
+                  <br />
+                  <p>
+                    <strong>Undersøgelsesspørgsmål:</strong> Hvad er
+                    vigtigt/motiverende for dem der tager til musikoplevelser og
+                    koncerter?
+                  </p>
+                  <br />
+
+                  <p>
+                    <strong>Temaer:</strong> Livsstil og interesser,
+                    Musikkendskab og vigtighed og Det sociale element
+                  </p>
+
+                  <img
+                    src="./assets/img/interviewguide_festival1.png"
+                    alt="interviewguide for musik festical "
+                    class="accordion-image"
+                  />
+                </div>
+              </div>
+            </section>
+
+            <section id="kundemoede" class="accordion">
+              <h2>Kundemøde</h2>
+              <p>
+                Der blev afsat et kundemøde med en repræsentant fra Den Blå
+                Festival, her var der en vidensdelt information om festivalen i
+                sin helheld. Det skulle være med til at forstå kundens
+                situation, deres værdier, og eventuelle udfordringer.
+              </p>
+              <div class="accordion-box">
+                <button class="accordion-toggle">
+                  <span class="accordion-text">Se mere om Kundemøde</span>
+                  <i class="fa-solid fa-arrow-down arrow"></i>
+                </button>
+                <div class="accordion-content">
+                  <p>Noter der blev taget under kundemødet:</p>
+                  <br />
+
+                  <img
+                    src="./assets/img/kundemoede.png"
+                    alt="noter fra kundemøde"
+                    class="accordion-image"
+                  />
+                </div>
+              </div>
+            </section>
+
+            <section id="designsprint" class="accordion">
+              <h2>Designsprint</h2>
+              <p>
+                Designsprint er en struktureret proces, som vi bruger til at
+                udvikle nye ideer hurtigt, der giver mening i vores
+                designproces. Under et designsprint arbejder man på at udvikle
+                løsninger, og bygge en prototype, som man tester på potentielle
+                burgere. Et designsprint har til formål at mindske tiden brugt
+                på at designe, mens man stadig udvikler et kvalitetsprodukt.
+                Design sprint består af 6 faser.
+              </p>
+              <div class="accordion-box">
+                <button class="accordion-toggle">
+                  <span class="accordion-text">Se mere om Design sprint</span>
+                  <i class="fa-solid fa-arrow-down arrow"></i>
+                </button>
+                <div class="accordion-content">
+                  <p><strong>Fase 1 (Understand) og Fase 2 (Define)</strong></p>
+                  <p>
+                    Først og fremmest i designsprintet danne en samlet
+                    forståelse og videns base med alle i gruppen. Derefter
+                    forstå brugeren og hvad der danner mangel/brug for
+                    produktet.
+                  </p>
+                  <br />
+                  <p>
+                    Det næste var i teamet, at evaluere alt det de kom frem til
+                    i fase 1 og danne fokus. Dette bliver gjort ved at definere
+                    specifikke kontekster og muligheder for potentielle mål.
+                  </p>
+                  <img
+                    src="./assets/img/designSprint1.png"
+                    alt="design sprint intro og fase 1"
+                    class="accordion-image"
+                  />
+                  <br />
+                  <br />
+                  <p><strong>Fase 3 (Sketch) og Fase 4 (Decide)</strong></p>
+                  <p>
+                    I danne fase genererede vi ideer hver især, dette bliver
+                    gjort ved at kigge på inspiration for eksemplet på andre
+                    sider samt brugt metoder som Crazy 8’s og Heatmap voting.
+                  </p>
+                  <br />
+                  <p>
+                    Det næste var, at vi i teamet skulle danne overblik over de
+                    generede sketches og vælge elementer som alle er enige med,
+                    er de som giver bedst resultat.
+                  </p>
+                  <div
+                    class="image-wrapper preview-active"
+                    data-modal="modal-sketch"
+                  >
+                    <img
+                      src="./assets/img/designSprint2.png"
+                      alt="Design sprint fase 3 og 4"
+                      class="accordion-image"
+                    />
+                    <i class="fas fa-search-plus expand-icon"></i>
+                  </div>
+                  <div
+                    class="image-wrapper preview-active"
+                    data-modal="modal-iteration"
+                  >
+                    <img
+                      src="./assets/img/designSprint2.1.png"
+                      alt="Design sprint fase 3 og 4"
+                      class="accordion-image"
+                    />
+                    <i class="fas fa-search-plus expand-icon"></i>
+                  </div>
+                  <img
+                    src="./assets/img/designSprint2.2.png"
+                    alt="design sprint fase 3 og 4"
+                    class="accordion-image"
+                  />
+                  <br />
+                  <br />
+                  <p><strong>Fase 5: Prototype (Storyboard)</strong></p>
+                  <p>
+                    I denne fase samlede vi i teamet en fælles prototypeide,
+                    fastholdt i vigtige beslutninger under prototypen.
+                  </p>
+                  <br />
+                  <p>
+                    Selve storyboardet skal være med til at koble til
+                    brugertesten og dermed skabe struktur i det, der skal
+                    testes.
+                  </p>
+                  <img
+                    src="./assets/img/designSprint3.png"
+                    alt="design sprint fase 4 og 5"
+                    class="accordion-image"
+                  />
+                  <br />
+                  <br />
+                  <p>
+                    <strong
+                      >Fase 6 - Validate (Think aloud test) spørgsmål</strong
+                    >
+                  </p>
+                  <p>
+                    Dernæst gav vi i teamet vores produkt videre til nogle
+                    informanter som skal validere og teste det, for at derefter
+                    give feedback hvorpå teamet kan arbejde videre med
+                    produktet.
+                  </p>
+                  <br />
+                  <p>
+                    Dertil fik vi opsat følgende tasks til vores Think Aloud
+                    Tests.
+                  </p>
+                  <img
+                    src="./assets/img/designSprint4.png"
+                    alt="design sprint fase 6"
+                    class="accordion-image"
+                  />
+
+                  <div class="picture_expand" id="modal-sketch">
+                    <div class="modal-box">
+                      <img
+                        src="./assets/img/designSprint2.png"
+                        alt="Design sprint fase 3 og 4"
+                        class="modal-image-content"
+                      />
+                      <i class="fas fa-times buttonClose"></i>
+                    </div>
+                  </div>
+                  <div class="picture_expand" id="modal-iteration">
+                    <div class="modal-box">
+                      <img
+                        src="./assets/img/designSprint2.1.png"
+                        alt="Design sprint fase 3 og 4"
+                        class="modal-image-content"
+                      />
+                      <i class="fas fa-times buttonClose"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section id="braindump" class="accordion">
+              <h2>Braindump</h2>
+              <p>
+                Vi vil gennemførte en braindump, hvor alle vores ideer og tanker
+                om funktioner, forskellige elementer og indholdstyper skrives
+                ned uden struktur. Dette sikrer at alle relevante input vi
+                laver, er tilgængelig for videre udvikling og noget vi kan
+                implementere i vores design.
+              </p>
+              <div class="accordion-box">
+                <button class="accordion-toggle">
+                  <span class="accordion-text">Se mere om Braindump</span>
+                  <i class="fa-solid fa-arrow-down arrow"></i>
+                </button>
+                <div class="accordion-content">
+                  <img
+                    src="./assets/img/braindump.png"
+                    alt="braindump til festival app"
+                    class="accordion-image"
+                  />
+                </div>
+              </div>
+            </section>
+
+            <section id="affinity_diagram" class="accordion">
+              <h2>Affinity Diagram</h2>
+              <p>
+                I Affinity Diagram blev der sat relationer ud fra fælles nævner
+                og derefter blive navngivet og indholdet vil blive
+                systematiseret. Denne proces hjælper med at identificere
+                centrale indholdsområder og overordnede sektioner for webappen.
+              </p>
+              <div class="accordion-box">
+                <button class="accordion-toggle">
+                  <span class="accordion-text"
+                    >Se mere om Affinity Diagram</span
+                  >
+                  <i class="fa-solid fa-arrow-down arrow"></i>
+                </button>
+                <div class="accordion-content">
+                  <img
+                    src="./assets/img/affinity_diagram.png"
+                    alt="affinity diagram til festival app"
+                    class="accordion-image"
+                  />
+                </div>
+              </div>
+            </section>
+
+            <section id="content_sitemap" class="accordion">
+              <h2>Content Sitemap</h2>
+              <p>
+                Denne content sitemap hjalp os med at illustrere den overordnede
+                struktur og navigation på webappen. Dette vil tydeliggøre,
+                hvordan indholdsområder hænger sammen, og hvordan brugeren bedst
+                muligt kan navigere mellem kategorier, samt andre funktioner.
+              </p>
+              <div class="accordion-box">
+                <button class="accordion-toggle">
+                  <span class="accordion-text">Se mere om Content Sitemap</span>
+                  <i class="fa-solid fa-arrow-down arrow"></i>
+                </button>
+                <div class="accordion-content">
+                  <img
+                    src="./assets/img/content_sitemap.png"
+                    alt="content sitemap til festival app"
+                    class="accordion-image"
+                  />
+                </div>
+              </div>
+            </section>
+
+            <section id="wireframe" class="accordion">
+              <h2>Wireframe</h2>
+              <p>
+                For wireframes byggede op på det vi tidligere lavet under fasen
+                for skitsering. Her laver vi simple illustrationer af
+                strukturen, og komponenterne for vores webapp. Her får vi også
+                mulighed for at test brede koncepter og specifikke funktioner,
+                som vores filtrering.
+              </p>
+              <div class="accordion-box">
+                <button class="accordion-toggle">
+                  <span class="accordion-text">Se mere om Wireframe</span>
+                  <i class="fa-solid fa-arrow-down arrow"></i>
+                </button>
+                <div class="accordion-content">
+                  <img
+                    src="./assets/img/wireframe.png"
+                    alt="wireframes til festival app"
+                    class="accordion-image"
+                  />
+                </div>
+              </div>
+            </section>
+
+            <section id="mock_ups" class="accordion">
+              <h2>Mock-ups</h2>
+              <p>
+                Efter skitser og wireframes kommer vi til en af de sidste faser
+                af vores design-proces, nemlig en High Fidelity Mock-up. Her går
+                vi fra simple visuelle repræsentationer med med fokus på
+                layoutet til implementering af farve, indhold og andre visuelle
+                elementer.
+              </p>
+              <div class="accordion-box">
+                <button class="accordion-toggle">
+                  <span class="accordion-text">Se mere om Mock-ups</span>
+                  <i class="fa-solid fa-arrow-down arrow"></i>
+                </button>
+                <div class="accordion-content">
+                  <img
+                    src="./assets/img/mock_ups_festival1.png"
+                    alt="mock ups til festival app"
+                    class="accordion-image"
+                  />
+                  <br />
+                  <br />
+                  <p>
+                    Efter vores Think Aloud Test satte vi os ned i gruppen, og
+                    prøvede at finde et mønster i hvad informanterne oplevede,
+                    da de testede vores webapp. <br />
+                    <br />
+                    Ud fra den feedback lavede vi relevante ændringer.
+                  </p>
+                  <img
+                    src="./assets/img/mock_ups_festival2.png"
+                    alt="mock ups til festival app"
+                    class="accordion-image"
+                  />
+                </div>
+              </div>
+            </section>
+
+            <section id="kodning" class="accordion">
+              <h2>Kodning af Blå Festival Webapp</h2>
+              <p>Efter vi gennemførte et think-aloud testforløb på vores high-fidelity mockups, justerede vi designet baseret på brugernes oplevelse og feedback. Derefter begyndte vi at implementere webappen ved hjælp af HTML, CSS og JavaScript.
+              </p>
+              <div class="accordion-box">
+                <button class="accordion-toggle">
+                  <span class="accordion-text">Se mere om Kodning af Blå Festival Webapp </span>
+                  <i class="fa-solid fa-arrow-down arrow"></i>
+                </button>
+                <div class="accordion-content">
+                  <img
+                    src="./assets/img/kodning_BF1.png"
+                    alt="mock ups til festival app"
+                    class="accordion-image"
+                  />
+                  <br />
+                  <br />
+                  <p> I udviklingen fokuserede vi særligt på funktioner som filtrering af bands og modaler, der viser et vindue med ekstra information om de enkelte bands.
+                  </p>
+                  <img
+                    src="./assets/img/kodning_BF2.png"
+                    alt="mock ups til festival app"
+                    class="accordion-image"
+                  />
+                </div>
+              </div>
+              <a href="#top" class="back-to-top"
+                >Tilbage til toppen <i class="fa-solid fa-arrow-up"></i
+              ></a>
+            </section>
+          </section>
+        </div>
+      </section>
+      <div class="line"></div>
+
+        <section class="case_studies_section">
+            <div class="case_studies_background">
+                <!-- Billedet kan findes ved: https://www.flaticon.com/free-icon/pen_1250925?term=pen&page=1&position=4&origin=search&related_id=1250925 under creative commons-->
+                <div class="pencil"></div>
+                <!-- Billedet kan findes ved: https://www.vexels.com/png-svg/preview/157318/desktop-computer-icon-computer under creative commons -->
+                <div class="computer"></div>
+                <!-- Billedet kan findes ved: https://www.flaticon.com/free-icon/blueprint_4257674 under creative commons-->
+                <div class="blueprint"></div>
+            </div>
+            <h2>Jan's Case Studies</h2>
+
+            <div class="case_studies_cards">
+                <a href="blaaFestivalCase.html" class="card">
+                <h3>Den Blå Festival</h3>
+                <div class="image_wrapper">
+                <!-- Billedet kan findes ved: https://www.colourbox.com/search/find?q=guitarist&media_type=&editorial=&orientation=&resolution=&colour=&safesearch=&order=strict_constant_scores -->
+                <img src="./assets/img/guitar_player.png" alt="guitarist på scene">
+                <div class="overlay">
+                  <!-- Link til ikon: https://fontawesome.com/icons/html5?f=brands&s=solid -->
+                    <div class="icon_box">
+                    <i class="fa-brands fa-html5"></i>
+                    <p>HTML</p>
+                    </div>
+                    <!-- Link til ikon: https://fontawesome.com/icons/css?f=brands&s=solid -->
+                    <div class="icon_box">
+                    <i class="fa-brands fa-css"></i>
+                    <p>CSS</p>
+                    </div>
+                    <!-- Link til ikon: https://fontawesome.com/icons/js?f=brands&s=solid -->
+                    <div class="icon_box">
+                    <i class="fa-brands fa-square-js"></i>
+                    <p>JS</p>
+                    </div>
+                </div>
+                </div>
+                </a>
+
+                <!-- Billedet genereret via AI -->
+                <a href="fitTogetherCase.html" class="card">
+                <h3>FitTogether</h3>
+                <div class="image_wrapper">
+                <img src="./assets/img/FitTogether.png" alt="vægt logo">
+                <div class="overlay">
+                    <div class="icon_box">
+                    <!-- Link til ikon: https://fontawesome.com/icons/compass-drafting?f=classic&s=solid -->
+                    <i class="fa-solid fa-compass-drafting"></i>
+                    <p>UX/UI</p>
+                    </div>
+                </div>
+                </div>
+                </a>
+
+                <a href="magiskJulCase.html" class="card">
+                <h3>Magisk Jul</h3>
+                <div class="image_wrapper">
+                  <!-- Billedet kan findes ved: https://unsplash.com/photos/red-lighted-candle-on-brown-wooden-frame-iKHXbvNHXPQ -->
+                <img src="./assets/img/christmas.jpg" alt="stearinlys">
+                <div class="overlay">
+                    <div class="icon_box">
+                    <i class="fa-brands fa-html5"></i>
+                    <p>HTML</p>
+                    </div>
+                    <div class="icon_box">
+                    <i class="fa-brands fa-css"></i>
+                    <p>CSS</p>
+                    </div>
+                </div>
+                </div>
+                </a>
+            </div>
+        </section>
+    </main>
 
     <footer>
-    <div class="footer_row">
+      <div class="footer_row">
         <div class="quick_shortcuts">
-            <p>Jan Quoc Tran. 2025. All Rights Reserved.</p>
+          <p>Jan Quoc Tran. 2025. All Rights Reserved.</p>
         </div>
 
         <div class="quick_shortcuts">
-        <p><strong>Sociale medier</strong></p>
-        <div class="icons">
-            <a href="https://www.facebook.com/jan.tran.3?locale=da_DK" target="_blank" aria-label="Facebook">
-            <i class="fa-brands fa-square-facebook"></i>
+          <p><strong>Sociale medier</strong></p>
+          <div class="icons">
+            <a
+              href="https://www.facebook.com/jan.tran.3?locale=da_DK"
+              target="_blank"
+              aria-label="Facebook"
+            >
+              <i class="fa-brands fa-square-facebook"></i>
             </a>
-            <a href="https://www.instagram.com/jan_quoc_tran/" target="_blank" aria-label="Instagram">
-            <i class="fa-brands fa-square-instagram"></i>
+            <a
+              href="https://github.com/Lynkineseren"
+              target="_blank"
+              aria-label="Github"
+            >
+              <i class="fa-brands fa-square-github"></i>
             </a>
-            <a href="https://www.linkedin.com/in/jan-quoc-tran/" target="_blank" aria-label="LinkedIn">
-            <i class="fa-brands fa-linkedin"></i>
+            <a
+              href="https://www.linkedin.com/in/jan-quoc-tran/"
+              target="_blank"
+              aria-label="LinkedIn"
+            >
+              <i class="fa-brands fa-linkedin"></i>
             </a>
-        </div>
+          </div>
         </div>
 
         <div class="quick_shortcuts">
-            <p><strong>Kontakt</strong></p>
-            <p>jan.tran9@gmail.com</p>
-            <p>+45 52819684</p>
+          <p><strong>Kontakt</strong></p>
+          <p>jan.tran9@gmail.com</p>
+          <p>+45 52819684</p>
         </div>
-    </div>
-
-</footer>
-</body>
+      </div>
+    </footer>
+  </body>
 </html>

@@ -1,59 +1,755 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JQT's Portfolio | Homepage </title>
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-    <script src="./assets/js/app.js" defer> </script>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JQT's Portfolio | Magisk Jul</title>
+    <link rel="stylesheet" href="./assets/css/portfolio.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <script src="./assets/js/script.js" defer></script>
+  </head>
 
-</head>
-<body>
-    <header>
-    <!-- Navigation med Plated logo, titler på undersider, searchbar og search icon  -->
-        <nav>
-            <div class="menu">
-                <ul>
-                    <li><a href="index.html"><strong>Forside</strong></a></li>
-                    <li><a href="overview.html">Case Studies</a></li>
-                    <li><a href="omMig.html">Om Mig</a></li>
-                    <li><a href="kontaktMig.html">Kontakt</a></li>
-                </ul>
-            </div>
-        </nav>
-        <div class="line"></div>
+  <body class="magiskJulCase">
+    <header id="top">
+      <nav class="main-nav">
+        <div class="menu">
+          <ul>
+            <li><a href="index.html">Forside</a></li>
+            <li>
+              <a href="overview.html" class="active"
+                ><strong>Case Studies</strong></a
+              >
+            </li>
+            <li><a href="omMig.html">Om Mig</a></li>
+            <li><a href="kontaktMig.html">Kontakt</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="line"></div>
     </header>
-    
+
+    <main>
+      <section class="breadcrumb">
+        <div>
+          <p>
+            <a href="./overview.html">
+              <strong
+                ><i class="fa-solid fa-arrow-left"></i> Tilbage til case studies
+                oversigt</strong
+              >
+            </a>
+          </p>
+        </div>
+      </section>
+
+      <section class="projects-section-magisk-jul fade-in-left">
+        <div class="content">
+          <h1 class="magisk_jul_h1">Magisk Jul</h1>
+          <p>
+            Opgaven her var at designe og udvikle websitet Magisk Jul et projekt
+            med fokus på at skabe en varm og stemningsfuld juleoplevelse online.
+            Gennem arbejde med budskaber, interviews, content inventory og
+            sitemap blev indhold og struktur defineret.
+          </p>
+          <br />
+          <p>
+            Processen omfattede også braindump, affinity diagram, skitser,
+            wireframes og mock-ups, som tilsammen skabte et sammenhængende og
+            brugervenligt design.
+          </p>
+        </div>
+        <div>
+          <img
+            class="fade-in-left"
+            src="./assets/img/christmas.jpg"
+            alt="forside på Magisk Jul projektet"
+          />
+        </div>
+      </section>
+
+      <section class="research-section">
+        <div class="research-wrap">
+          <aside class="research-nav">
+            <nav>
+              <p><strong>Indholdsfortegnelse</strong></p>
+              <ul>
+                <li><a href="#maal">Mål for website</a></li>
+                <li><a href="#budskaber">Budskaber</a></li>
+                <li><a href="#interview_guide">Interviewguide</a></li>
+                <li>
+                  <a href="#analyse_af_interview">Analyse af interviews</a>
+                </li>
+                <li><a href="#content_inventory">Content Inventory</a></li>
+                <li><a href="#content_sitemap">Content Sitemap</a></li>
+                <li>
+                  <a href="#affinity_diagram_magisk_jul">Affinity Diagram</a>
+                </li>
+                <li><a href="#skitser_magisk_jul">Skitser</a></li>
+                <li><a href="#wireframe_magisk_jul">Wireframes</a></li>
+                <li><a href="#mock_ups_magisk_jul">Mock-ups</a></li>
+              </ul>
+            </nav>
+          </aside>
+
+          <section class="research-content">
+            <section id="maal" class="accordion">
+              <h3>Mål for website</h3>
+              <p>
+                Jeg startede med at definere målene for Magisk Jul websitet for
+                at skabe en klar retning. Det hjalp mig med at forstå, hvad jeg
+                ville opnå med projektet, hvem jeg designede til, og hvordan
+                oplevelsen skulle føles for brugeren.
+              </p>
+              <div class="accordion-box">
+                <button class="accordion-toggle">
+                  <span class="accordion-text">Se mere om Mål for website</span>
+                  <i class="fa-solid fa-arrow-down arrow"></i>
+                </button>
+
+                <div class="accordion-content">
+                  <div
+                    class="image-wrapper preview-active maal-preview"
+                    data-modal="modal-maal"
+                  >
+                    <img
+                      src="./assets/img/maal.png"
+                      alt="Liste over mål for Magisk Jul projektet"
+                      class="accordion-image"
+                    />
+                    <i class="fas fa-search-plus expand-icon"></i>
+                  </div>
+                </div>
+
+                <!-- Modal til Magisk Jul mål -->
+                <div class="picture_expand" id="modal-maal">
+                  <div class="modal-box">
+                    <img
+                      src="./assets/img/maal.png"
+                      alt="Liste over mål for Magisk Jul projektet"
+                      class="modal-image-content"
+                    />
+                    <i class="fas fa-times buttonClose"></i>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section id="budskaber" class="accordion">
+              <h3>Budskaber</h3>
+              <p>
+                Jeg arbejdede med at finde de centrale budskaber, der skulle
+                formidle julens varme og stemning. Det handlede om at skabe en
+                rød tråd i kommunikationen, så både tekst og visuelt udtryk
+                talte samme sprog.
+              </p>
+
+              <div class="accordion-box">
+                <button class="accordion-toggle">
+                  <span class="accordion-text">Se mere om Budskaber</span>
+                  <i class="fa-solid fa-arrow-down arrow"></i>
+                </button>
+
+                <div class="accordion-content">
+                  <p>
+                    Her blev der eksperimenteret med både varme og humoristiske
+                    formuleringer. Nogle budskaber fokuserer på familiehygge og
+                    magi, mens andre tester grænser med provokation og
+                    overdrivelse. Formålet var at finde tone og stil, der vækker
+                    opmærksomhed og følelser.
+                  </p>
+                  <img
+                    src="./assets/img/budskaber.png"
+                    alt="liste over budskaber for Magisk Jul projektet"
+                    class="accordion-image"
+                  />
+                  <br />
+                  <br />
+                  <p>
+                    Budskaberne er struktureret efter konkrete mål: information,
+                    stemning, events, familie, shopping og brugervenlighed. De
+                    skal skabe overblik, inspirere til besøg og sikre en
+                    indbydende og letforståelig oplevelse på tværs af
+                    målgrupper.
+                  </p>
+                  <img
+                    src="./assets/img/budskaber2.png"
+                    alt="yderligere budskaber for Magisk Jul projektet"
+                    class="accordion-image"
+                  />
+                </div>
+              </div>
+            </section>
+
+            <section id="interview_guide" class="accordion">
+              <h3>Interview guide</h3>
+              <p>
+                Jeg udarbejdede en interviewguide for at få en bedre forståelse
+                af brugernes tanker og forventninger til en juleoplevelse
+                online. Guiden hjalp mig med at stille de rigtige spørgsmål og
+                få brugbare indsigter.
+              </p>
+
+              <div class="accordion-box">
+                <button class="accordion-toggle">
+                  <span class="accordion-text">Se mere om Interview guide</span>
+                  <i class="fa-solid fa-arrow-down arrow"></i>
+                </button>
+
+                <div class="accordion-content">
+                  <p>
+                    <strong>Temaer/spørgsmål:</strong> Hvilke tanker/handlinger
+                    er grundlæggende for, at besøge et julemarked? Hvilke
+                    oplevelser og hvilken viden tilægges størst betydning?
+                  </p>
+                  <img
+                    src="./assets/img/interviewguide_magisk_jul.png"
+                    alt="interview guide for Magisk Jul projektet"
+                    class="accordion-image"
+                  />
+                </div>
+              </div>
+            </section>
+
+            <section id="analyse_af_interview" class="accordion">
+              <h3>Analyse af interview</h3>
+              <p>
+                Efter interviewene analyserede jeg svarene for at finde fælles
+                temaer og behov. Det gav mig en klar fornemmelse af, hvad
+                brugerne savner, og hvordan jeg kunne gøre oplevelsen mere
+                nærværende og engagerende.
+              </p>
+
+              <div class="accordion-box">
+                <button class="accordion-toggle">
+                  <span class="accordion-text"
+                    >Se mere om Analyse af interview</span
+                  >
+                  <i class="fa-solid fa-arrow-down arrow"></i>
+                </button>
+
+                <div class="accordion-content">
+                  <p>
+                    Interviewene viser, at julemarkedet forbindes med
+                    traditioner, hygge og fællesskab. Informanterne fremhæver
+                    stemningen, lysene, musikken og maden som centrale
+                    elementer. Det er en pause fra hverdagen og en mulighed for
+                    at være sammen med familie og venner. Personlige oplevelser
+                    og sanselige indtryk gør besøget mindeværdigt.
+                  </p>
+                  <img
+                    src="./assets/img/analyse_af_interviews.png"
+                    alt="analyse af interviewresultater for Magisk Jul"
+                    class="accordion-image"
+                  />
+                </div>
+              </div>
+            </section>
+
+            <section id="content_inventory" class="accordion">
+              <h3>Content inventory</h3>
+              <p>
+                Jeg lavede en content inventory for at skabe overblik over alt
+                indholdet, der skulle indgå. Det gjorde det lettere at
+                planlægge, hvad der skulle skrives, opdateres eller udelades for
+                at skabe et fokuseret website.
+              </p>
+
+              <div class="accordion-box">
+                <button class="accordion-toggle">
+                  <span class="accordion-text"
+                    >Se mere om Content inventory</span
+                  >
+                  <i class="fa-solid fa-arrow-down arrow"></i>
+                </button>
+
+                <div class="accordion-content">
+                  <p>
+                    Den første version giver et grundlæggende kortlægning af
+                    Magisk Jul websitet, med fokus på struktur, indholdstyper og
+                    ejerskab. Den viser, hvilke sektioner der findes, hvad de
+                    indeholder, og hvordan de er organiseret. Det er et
+                    udgangspunkt for at vurdere, hvad der skal bevares,
+                    opdateres eller fjernes.
+                  </p>
+                  <div
+                    class="image-wrapper preview-active"
+                    data-modal="modal-content1"
+                  >
+                    <img
+                      src="./assets/img/content_inventory1.png"
+                      alt="Første content inventory over Magisk Jul"
+                      class="accordion-image"
+                    />
+                    <i class="fas fa-search-plus expand-icon"></i>
+                  </div>
+                  <br />
+                  <br />
+
+                  <p>
+                    Nedstående billede vises der at indholdet blevet mere
+                    detaljeret og prioriteret. Der er tilføjet vurderinger af
+                    status og relevans, samt forslag til handlinger som
+                    “rewrite”, “migrate” og “delete”. Denne version bruges til
+                    at planlægge næste skridt i redesign og sikre, at indholdet
+                    matcher brugerbehov og projektmål.
+                  </p>
+                  <!-- Content Inventory 2 -->
+                  <div
+                    class="image-wrapper preview-active"
+                    data-modal="modal-content2"
+                  >
+                    <img
+                      src="./assets/img/content_inventory2.png"
+                      alt="Opdateret content inventory over Magisk Jul"
+                      class="accordion-image"
+                    />
+                    <i class="fas fa-search-plus expand-icon"></i>
+                  </div>
+
+                  <br />
+                  <br />
+
+                  <p>
+                    Den tredje version kombinerer eksisterende indhold med nye
+                    idéer. Den indeholder forslag til forbedringer, nye
+                    sektioner og justeringer af tone og funktion. Fokus er på at
+                    skabe en mere inspirerende og brugervenlig oplevelse, især
+                    med tanke på Magisk Juls stemning og målgrupper.
+                  </p>
+
+                  <!-- Content Inventory 3 -->
+                  <div
+                    class="image-wrapper preview-active"
+                    data-modal="modal-content3"
+                  >
+                    <img
+                      src="./assets/img/content_inventory3.png"
+                      alt="Ny content inventory og ideer til Magisk Jul"
+                      class="accordion-image"
+                    />
+                    <i class="fas fa-search-plus expand-icon"></i>
+                  </div>
+
+                  <div class="picture_expand" id="modal-content1">
+                    <div class="modal-box">
+                      <img
+                        src="./assets/img/content_inventory1.png"
+                        alt="Første content inventory over Magisk Jul"
+                        class="modal-image-content"
+                      />
+                      <i class="fas fa-times buttonClose"></i>
+                    </div>
+                  </div>
+
+                  <!-- Modal for Content Inventory 2 -->
+                  <div class="picture_expand" id="modal-content2">
+                    <div class="modal-box">
+                      <img
+                        src="./assets/img/content_inventory2.png"
+                        alt="Opdateret content inventory over Magisk Jul"
+                        class="modal-image-content"
+                      />
+                      <i class="fas fa-times buttonClose"></i>
+                    </div>
+                  </div>
+
+                  <!-- Modal for Content Inventory 3 -->
+                  <div class="picture_expand" id="modal-content3">
+                    <div class="modal-box">
+                      <img
+                        src="./assets/img/content_inventory3.png"
+                        alt="Ny content inventory og ideer til Magisk Jul"
+                        class="modal-image-content"
+                      />
+                      <i class="fas fa-times buttonClose"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section id="content_sitemap" class="accordion">
+              <h3>Content sitemap</h3>
+              <p>
+                Jeg organiserede indholdet i et sitemap for at strukturere
+                brugerens vej gennem sitet. Det hjalp mig med at skabe en logisk
+                opbygning, hvor alt føltes naturligt og nemt at finde.
+              </p>
+
+              <div class="accordion-box">
+                <button class="accordion-toggle">
+                  <span class="accordion-text">Se mere om Content sitemap</span>
+                  <i class="fa-solid fa-arrow-down arrow"></i>
+                </button>
+
+                <div class="accordion-content">
+                  <p>
+                    Sitemappet giver et hurtigt overblik over websitets struktur
+                    for Magisk Jul. Det viser, hvordan indholdet fordeles på
+                    forsiden og undersider som café, events og FAQ, med fokus på
+                    stemning, booking, mad og praktisk info. Målet er en
+                    brugervenlig og inspirerende oplevelse.
+                  </p>
+                  <img
+                    src="./assets/img/content_sitemap_magisk_jul.png"
+                    alt="content sitemap for Magisk Jul"
+                    class="accordion-image"
+                  />
+                </div>
+              </div>
+            </section>
+
+            <section id="affinity_diagram_magisk_jul" class="accordion">
+              <h3>Affinity diagram</h3>
+              <p>
+                Jeg samlede mine idéer og observationer i et affinity diagram.
+                Det gjorde det nemmere at se sammenhænge og prioritere de
+                vigtigste indsigter, inden jeg gik videre til designfasen.
+              </p>
+
+              <div class="accordion-box">
+                <button class="accordion-toggle">
+                  <span class="accordion-text"
+                    >Se mere om Affinity diagram</span
+                  >
+                  <i class="fa-solid fa-arrow-down arrow"></i>
+                </button>
+
+                <div class="accordion-content">
+                  <p>
+                    Affinity-diagrammet samler idéer og input på tværs af temaer
+                    som design, mad, shopping og events. Det bruges til at
+                    identificere mønstre og behov i brugeroplevelsen og hjælper
+                    med at prioritere indhold og funktioner, der kan styrke
+                    Magisk Juls visuelle og praktiske udtryk.
+                  </p>
+                  <img
+                    src="./assets/img/affinity_diagram_magisk_jul.png"
+                    alt="Affinity diagram for Magisk Jul"
+                    class="accordion-image"
+                  />
+                </div>
+              </div>
+            </section>
+
+            <section id="skitser_magisk_jul" class="accordion">
+              <h3>Skitser</h3>
+              <p>
+                Jeg begyndte at skitsere mine idéer for hurtigt at visualisere,
+                hvordan strukturen og stemningen kunne se ud. Det var en fri og
+                kreativ proces, hvor jeg kunne lege med forskellige
+                layoutmuligheder.
+              </p>
+
+              <div class="accordion-box">
+                <button class="accordion-toggle">
+                  <span class="accordion-text">Se mere om Skitser</span>
+                  <i class="fa-solid fa-arrow-down arrow"></i>
+                </button>
+
+                <div class="accordion-content">
+                  <p>
+                    Mobilskitserne viser layout og funktioner for Magisk Juls
+                    mobilsite. De fokuserer på tydelig navigation,
+                    bookingmuligheder og sektioner som café, events og FAQ.
+                    Skitserne hjælper med at forstå brugerrejsen og sikre, at
+                    indholdet præsenteres enkelt og effektivt på små skærme.
+                  </p>
+                  <div
+                    class="image-wrapper preview-active"
+                    data-modal="modal-skitse-mobile"
+                  >
+                    <img
+                      src="./assets/img/skitser_magisk_jul.png"
+                      alt="Skitser til Magisk Jul mobilversion"
+                      class="accordion-image"
+                    />
+                    <i class="fas fa-search-plus expand-icon"></i>
+                  </div>
+
+                  <br />
+                  <br />
+
+                  <p>
+                    Desktopskitserne visualiserer indhold og struktur for Magisk
+                    Juls website i fuld bredde. De fremhæver stemningsbilleder,
+                    madoplevelser og events, og giver plads til mere information
+                    og visuel variation. Skitserne bruges til at planlægge en
+                    inspirerende og overskuelig desktopoplevelse.
+                  </p>
+
+                  <div
+                    class="image-wrapper preview-active"
+                    data-modal="modal-skitse-desktop"
+                  >
+                    <img
+                      src="./assets/img/skitser_magisk_jul2.png"
+                      alt="Skitser til Magisk Jul desktopversion"
+                      class="accordion-image"
+                    />
+                    <i class="fas fa-search-plus expand-icon"></i>
+                  </div>
+
+                  <div class="picture_expand" id="modal-skitse-mobile">
+                    <div class="modal-box">
+                      <img
+                        src="./assets/img/skitser_magisk_jul.png"
+                        alt="Skitser til Magisk Jul mobilversion"
+                        class="modal-image-content"
+                      />
+                      <i class="fas fa-times buttonClose"></i>
+                    </div>
+                  </div>
+
+                  <div class="picture_expand" id="modal-skitse-desktop">
+                    <div class="modal-box">
+                      <img
+                        src="./assets/img/skitser_magisk_jul2.png"
+                        alt="Skitser til Magisk Jul desktopversion"
+                        class="modal-image-content"
+                      />
+                      <i class="fas fa-times buttonClose"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section id="wireframe_magisk_jul" class="accordion">
+              <h3>Wireframes</h3>
+              <p>
+                Jeg omsatte mine skitser til wireframes for at teste, hvordan
+                siderne fungerede sammen. Det gav mig en bedre forståelse af
+                brugerflowet og sikrede, at alt indhold havde en tydelig plads.
+              </p>
+
+              <div class="accordion-box">
+                <button class="accordion-toggle">
+                  <span class="accordion-text">Se mere om Wireframes</span>
+                  <i class="fa-solid fa-arrow-down arrow"></i>
+                </button>
+
+                <div class="accordion-content">
+                  <p>
+                    Wireframes for Magisk Jul viser den overordnede struktur og
+                    navigation for både mobil- og desktopversionen af websitet.
+                    De illustrerer, hvordan indhold som events, café, FAQ og
+                    billetbooking præsenteres visuelt og funktionelt. Skitserne
+                    bruges til at afstemme layout, brugerflow og prioritering af
+                    sektioner, så oplevelsen bliver intuitiv og stemningsfuld
+                    uanset enhed.
+                  </p>
+
+                  <div
+                    class="image-wrapper preview-active"
+                    data-modal="modal-wireframe-mobile"
+                  >
+                    <img
+                      src="./assets/img/wireframe_magisk_jul.png"
+                      alt="Wireframes til Magisk Jul mobilversion"
+                      class="accordion-image"
+                    />
+                    <i class="fas fa-search-plus expand-icon"></i>
+                  </div>
+
+                  <div
+                    class="image-wrapper preview-active"
+                    data-modal="modal-wireframe-desktop"
+                  >
+                    <img
+                      src="./assets/img/wireframe_magisk_jul2.png"
+                      alt="Wireframes til Magisk Jul desktopversion"
+                      class="accordion-image"
+                    />
+                    <i class="fas fa-search-plus expand-icon"></i>
+                  </div>
+
+                  <div class="picture_expand" id="modal-wireframe-mobile">
+                    <div class="modal-box">
+                      <img
+                        src="./assets/img/wireframe_magisk_jul.png"
+                        alt="Wireframes til Magisk Jul mobilversion"
+                        class="modal-image-content"
+                      />
+                      <i class="fas fa-times buttonClose"></i>
+                    </div>
+                  </div>
+
+                  <div class="picture_expand" id="modal-wireframe-desktop">
+                    <div class="modal-box">
+                      <img
+                        src="./assets/img/wireframe_magisk_jul2.png"
+                        alt="Wireframes til Magisk Jul desktopversion"
+                        class="modal-image-content"
+                      />
+                      <i class="fas fa-times buttonClose"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section id="mock_ups_magisk_jul" class="accordion">
+              <h3>Mock-ups</h3>
+              <p>
+                Til sidst designede jeg mock-ups, hvor farver, billeder og
+                typografi blev sat i spil. Det var her, den magiske julestemning
+                virkelig kom til live, og jeg kunne se, hvordan hele oplevelsen
+                ville tage sig ud for brugeren.
+              </p>
+
+              <div class="accordion-box">
+                <button class="accordion-toggle">
+                  <span class="accordion-text">Se mere om Mock-ups</span>
+                  <i class="fa-solid fa-arrow-down arrow"></i>
+                </button>
+
+                <div class="accordion-content">
+                  <p>
+                    Mockups for Magisk Jul viser det visuelle udtryk og den
+                    endelige designretning for både mobil- og desktopversionen
+                    af websitet. De kombinerer layout, farver, billeder og
+                    funktioner som booking, café, events og praktisk info.
+                    Mockups bruges til at teste stemning, brugerflow og
+                    indholdsprioritering, og sikrer at oplevelsen bliver både
+                    festlig og funktionel på tværs af enheder.
+                  </p>
+                  <img
+                    src="./assets/img/mock_ups_magisk_jul.png"
+                    alt="mock ups til Magisk Jul mobilversion"
+                    class="accordion-image"
+                  />
+                  <img
+                    src="./assets/img/mock_ups_magisk_jul2.png"
+                    alt="mock ups til Magisk Jul desktopversion"
+                    class="accordion-image"
+                  />
+                </div>
+              </div>
+              <a href="#top" class="back-to-top"
+                >Tilbage til toppen <i class="fa-solid fa-arrow-up"></i
+              ></a>
+            </section>
+          </section>
+        </div>
+      </section>
+      <div class="line"></div>
+
+              <section class="case_studies_section">
+            <div class="case_studies_background">
+                <!-- Billedet kan findes ved: https://www.flaticon.com/free-icon/pen_1250925?term=pen&page=1&position=4&origin=search&related_id=1250925 under creative commons-->
+                <div class="pencil"></div>
+                <!-- Billedet kan findes ved: https://www.vexels.com/png-svg/preview/157318/desktop-computer-icon-computer under creative commons -->
+                <div class="computer"></div>
+                <!-- Billedet kan findes ved: https://www.flaticon.com/free-icon/blueprint_4257674 under creative commons-->
+                <div class="blueprint"></div>
+            </div>
+            <h2>Jan's Case Studies</h2>
+
+            <div class="case_studies_cards">
+                <a href="blaaFestivalCase.html" class="card">
+                <h3>Den Blå Festival</h3>
+                <div class="image_wrapper">
+                <!-- Billedet kan findes ved: https://www.colourbox.com/search/find?q=guitarist&media_type=&editorial=&orientation=&resolution=&colour=&safesearch=&order=strict_constant_scores -->
+                <img src="./assets/img/guitar_player.png" alt="guitarist på scene">
+                <div class="overlay">
+                  <!-- Link til ikon: https://fontawesome.com/icons/html5?f=brands&s=solid -->
+                    <div class="icon_box">
+                    <i class="fa-brands fa-html5"></i>
+                    <p>HTML</p>
+                    </div>
+                    <!-- Link til ikon: https://fontawesome.com/icons/css?f=brands&s=solid -->
+                    <div class="icon_box">
+                    <i class="fa-brands fa-css"></i>
+                    <p>CSS</p>
+                    </div>
+                    <!-- Link til ikon: https://fontawesome.com/icons/js?f=brands&s=solid -->
+                    <div class="icon_box">
+                    <i class="fa-brands fa-square-js"></i>
+                    <p>JS</p>
+                    </div>
+                </div>
+                </div>
+                </a>
+
+                <!-- Billedet genereret via AI -->
+                <a href="fitTogetherCase.html" class="card">
+                <h3>FitTogether</h3>
+                <div class="image_wrapper">
+                <img src="./assets/img/FitTogether.png" alt="vægt logo">
+                <div class="overlay">
+                    <div class="icon_box">
+                    <!-- Link til ikon: https://fontawesome.com/icons/compass-drafting?f=classic&s=solid -->
+                    <i class="fa-solid fa-compass-drafting"></i>
+                    <p>UX/UI</p>
+                    </div>
+                </div>
+                </div>
+                </a>
+
+                <a href="magiskJulCase.html" class="card">
+                <h3>Magisk Jul</h3>
+                <div class="image_wrapper">
+                  <!-- Billedet kan findes ved: https://unsplash.com/photos/red-lighted-candle-on-brown-wooden-frame-iKHXbvNHXPQ -->
+                <img src="./assets/img/christmas.jpg" alt="stearinlys">
+                <div class="overlay">
+                    <div class="icon_box">
+                    <i class="fa-brands fa-html5"></i>
+                    <p>HTML</p>
+                    </div>
+                    <div class="icon_box">
+                    <i class="fa-brands fa-css"></i>
+                    <p>CSS</p>
+                    </div>
+                </div>
+                </div>
+                </a>
+            </div>
+        </section>
+    </main>
 
     <footer>
-    <div class="footer_row">
+      <div class="footer_row">
         <div class="quick_shortcuts">
-            <p>Jan Quoc Tran. 2025. All Rights Reserved.</p>
+          <p>Jan Quoc Tran. 2025. All Rights Reserved.</p>
         </div>
 
         <div class="quick_shortcuts">
-        <p><strong>Sociale medier</strong></p>
-        <div class="icons">
-            <a href="https://www.facebook.com/jan.tran.3?locale=da_DK" target="_blank" aria-label="Facebook">
-            <i class="fa-brands fa-square-facebook"></i>
+          <p><strong>Sociale medier</strong></p>
+          <div class="icons">
+            <a
+              href="https://www.facebook.com/jan.tran.3?locale=da_DK"
+              target="_blank"
+              aria-label="Facebook"
+            >
+              <i class="fa-brands fa-square-facebook"></i>
             </a>
-            <a href="https://www.instagram.com/jan_quoc_tran/" target="_blank" aria-label="Instagram">
-            <i class="fa-brands fa-square-instagram"></i>
+            <a
+              href="https://github.com/Lynkineseren"
+              target="_blank"
+              aria-label="Github"
+            >
+              <i class="fa-brands fa-square-github"></i>
             </a>
-            <a href="https://www.linkedin.com/in/jan-quoc-tran/" target="_blank" aria-label="LinkedIn">
-            <i class="fa-brands fa-linkedin"></i>
+            <a
+              href="https://www.linkedin.com/in/jan-quoc-tran/"
+              target="_blank"
+              aria-label="LinkedIn"
+            >
+              <i class="fa-brands fa-linkedin"></i>
             </a>
-        </div>
+          </div>
         </div>
 
         <div class="quick_shortcuts">
-            <p><strong>Kontakt</strong></p>
-            <p>jan.tran9@gmail.com</p>
-            <p>+45 52819684</p>
+          <p><strong>Kontakt</strong></p>
+          <p>jan.tran9@gmail.com</p>
+          <p>+45 52819684</p>
         </div>
-    </div>
-
-</footer>
-</body>
+      </div>
+    </footer>
+  </body>
 </html>

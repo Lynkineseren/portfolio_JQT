@@ -1,77 +1,257 @@
 <!DOCTYPE html>
 <html lang="da">
-<head>
-  <meta charset="utf-8" />
-  <title>SVG stroke animation</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <style>
-    body{
-      margin:0; min-height:100svh; display:grid; place-items:center; gap:1rem;
-      background:#afbfaf; color:#e6eef7; font:16px/1.4 system-ui, sans-serif;
-    }
-    .wrap{display:flex; flex-direction:column; align-items:center; gap:1rem}
-    svg{
-      width:min(92vw, 900px); height:auto; background:none; border-radius:.5rem;
-    }
-    .st0 {
-      fill: none;
-      stroke: #231f20;
-      stroke-miterlimit: 10;
-      stroke-width: 15px;
-    }
-  </style>
-</head>
-<body>
-  <div class="wrap">
-    <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 595.28 841.89">
-      <path id="path1" class="st0" d="M191.34,132.63l.09,83.68c0,7.48.01,15-1.25,22.37-1.36,7.94-4.86,16.39-12.18,19.74-2.02.92-4.22,1.39-6.43,1.68-7.73.99-16.05-.45-22.13-5.34s-9.3-13.61-6.49-20.88"/>
-      <path id="path2" class="st0" d="M241.12,157.59c-11.73,19.45-12.2,43.41-12.34,66.12-.03,5.35-.05,10.81,1.66,15.88,3.79,11.25,16.44,18.49,28.2,16.83,12.37-1.75,21.99-11.6,29.11-21.87,2.11-3.05,4.1-6.2,5.72-9.53,7.48-15.39,6.64-33.34,5.64-50.42-.67-11.34-8.69-31.17-20.03-36.54-14.48-6.84-31.22,8.35-37.96,19.53Z"/>
-      <path id="path3" class="st0" d="M274.73,233.37c9.8,7.05,16.86,17.8,19.46,29.58"/>
-      <line id="path4" class="st0" x1="324.8" y1="137.95" x2="405.94" y2="136.35"/>
-      <line id="path5" class="st0" x1="363.79" y1="137.18" x2="366.34" y2="266.17"/>
-    </svg>
-  </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JQT's Portfolio | Om Jan</title>
+    <link rel="stylesheet" href="./assets/css/portfolio.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <script src="./assets/js/script.js" defer></script>
+  </head>
 
-  <script>
-    const svg = document.querySelector('svg');
-    const path1 = svg.getElementById('path1');
-    const path2 = svg.getElementById('path2');
-    const path3 = svg.getElementById('path3');
-    const path4 = svg.getElementById('path4');
-    const path5 = svg.getElementById('path5');
+  <body>
+    <header>
+      <nav class="main-nav">
+        <div class="menu">
+          <ul>
+            <li><a href="index.html">Forside</a></li>
+            <li><a href="overview.html">Case Studies</a></li>
+            <li>
+              <a href="omMig.html" class="active"><strong>Om Mig</strong></a>
+            </li>
+            <li><a href="kontaktMig.html">Kontakt</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="line"></div>
+    </header>
 
-    console.log(path1.getTotalLength()); 
+    <main>
+      <div class="portfolio-wrapper">
+        <!-- Header -->
+        <header class="profile-header">
+          <div class="profile-header__image fade-in-left">
+            <!-- Billedet har Jan selv taget  -->
+            <img src="./assets/img/gymKlasse.JPG" alt="Jan Quoc Tran" />
+          </div>
+          <div class="profile-header__content fade-in-left">
+            <h1 class="profile-header__name">Jan Quoc Tran</h1>
+            <p>
+              <!-- Link til ikon: https://fontawesome.com/icons/graduation-cap?f=classic&s=solid -->
+              <i class="fa-solid fa-graduation-cap"></i> Tidligere uddannelse: Handelsskolen, EUC Nord <br />
+              <i class="fa-solid fa-location-dot"></i> Aalborg, Danmark
+            </p>
+            <p>
+              Jeg er 23 år, bor i Aalborg, og har interesse for design og
+              kreative projekter. Gennem mine studier har jeg opnået erfaring
+              med UX/UI design, front-end og projektbaseret samarbejde.
+            </p>
+            <p>
+              Mit fokus i projekter er altid at komme hele vejen rundt at forstå både idé, design og udførelse. Det er den tilgang, jeg ønsker at holde fast i fremover, fordi den giver mening og skaber bedre resultater.
+            </p>
+          </div>
+        </header>
 
-    function hideStroke(el){
-      const totalLength = el.getTotalLength();
-      el.style.strokeDasharray = totalLength;
-      el.style.strokeDashoffset = totalLength;
-    }
+        <div class="background-wrapper">
+          <div class="about_background"></div>
 
-    function animateStroke(el, duration, easing){
-      const totalLength = el.getTotalLength();
-      const anim = el.animate(
-        [
-          { strokeDashoffset: totalLength },
-          { strokeDashoffset: 0 }
-        ],
-        { duration, easing, fill: 'forwards' }
-      );
-      return anim.finished;
-    }
+          <section class="kompetence-sektion">
+            <h2>Faglige kompetencer</h2>
+            <div class="kompetence-grid">
+              <div class="kompetence-bar">
+                <span class="label">Figma/Figjam</span>
+                <div class="bar">
+                  <div class="segment fyldt"></div>
+                  <div class="segment fyldt"></div>
+                  <div class="segment fyldt"></div>
+                  <div class="segment fyldt"></div>
+                  <div class="segment tom"></div>
+                </div>
+                <span class="procent">80%</span>
+              </div>
 
-    async function playSequence(){
-      await animateStroke(path1, 800, 'ease-in-out');
-      await animateStroke(path2, 800, 'ease-in-out');
-      await animateStroke(path3, 800, 'ease-in-out');
-      await animateStroke(path4, 800, 'ease-in-out');
-      await animateStroke(path5, 800, 'ease-in-out');
-    }
+              <div class="kompetence-bar">
+                <span class="label">Adobe (Premiere Pro)</span>
+                <div class="bar">
+                  <div class="segment fyldt"></div>
+                  <div class="segment fyldt"></div>
+                  <div class="segment fyldt"></div>
+                  <div class="segment fyldt"></div>
+                  <div class="segment tom"></div>
+                </div>
+                <span class="procent">80%</span>
+              </div>
 
-    window.addEventListener('DOMContentLoaded', () => {
-      [path1, path2, path3, path4, path5].forEach(hideStroke);
-      playSequence();
-    });
-  </script>
-</body>
+              <div class="kompetence-bar">
+                <span class="label">Visual Studio Code</span>
+                <div class="bar">
+                  <div class="segment fyldt"></div>
+                  <div class="segment fyldt"></div>
+                  <div class="segment fyldt"></div>
+                  <div class="segment tom"></div>
+                  <div class="segment tom"></div>
+                </div>
+                <span class="procent">60%</span>
+              </div>
+
+              <div class="kompetence-bar">
+                <span class="label">Prototyping</span>
+                <div class="bar">
+                  <div class="segment fyldt"></div>
+                  <div class="segment fyldt"></div>
+                  <div class="segment fyldt"></div>
+                  <div class="segment fyldt"></div>
+                  <div class="segment tom"></div>
+                </div>
+                <span class="procent">80%</span>
+              </div>
+
+              <div class="kompetence-bar">
+                <span class="label">Atomic Design</span>
+                <div class="bar">
+                  <div class="segment fyldt"></div>
+                  <div class="segment fyldt"></div>
+                  <div class="segment fyldt"></div>
+                  <div class="segment fyldt"></div>
+                  <div class="segment tom"></div>
+                </div>
+                <span class="procent">80%</span>
+              </div>
+
+              <div class="kompetence-bar">
+                <span class="label">Front-end</span>
+                <div class="bar">
+                  <div class="segment fyldt"></div>
+                  <div class="segment fyldt"></div>
+                  <div class="segment fyldt"></div>
+                  <div class="segment tom"></div>
+                  <div class="segment tom"></div>
+                </div>
+                <span class="procent">60%</span>
+              </div>
+            </div>
+          </section>
+
+          <section class="hobbyer">
+            <h2>Hobbyer</h2>
+            <div class="hobby-grid">
+              <div class="hobby-kort">
+                <!-- Billedet har Jan selv taget  -->
+                <img src="assets/img/jan_fodbold.jpg" alt="Fodbold" />
+                <h3>Fodbold</h3>
+                <p>
+                  Jeg har spillet fodbold siden jeg var helt lille. Som
+                  midtbanespiller elsker jeg at jagte bolden, skabe spil og
+                  score indimellem. Jeg er stor fan af Real Madrid og Manchester City, og fodbold har altid været noget, jeg virkelig engagerer mig i.
+                </p>
+              </div>
+              <div class="hobby-kort">
+                <!-- Billedet har Jan selv taget  -->
+                <img src="assets/img/jan_gaming.jpg" alt="Gaming" />
+                <h3>Gaming</h3>
+                <p>
+                  Gaming spænder bredt, fra hurtige Tetris-udfordringer til samler- og chancebaserede gacha games som
+                  Wuthering Waves, og dybt fortællende story-based spil som
+                  Expedition 33, der fokuserer på narrativ og karakterudvikling.
+                </p>
+              </div>
+              <div class="hobby-kort">
+                <!-- Billedet har Jan selv taget  -->
+                <img src="assets/img/jan_traening.jpg" alt="Fitness" />
+                <h3>Fitness</h3>
+                <p>
+                  Træning har altid været en del af min hverdag, især cardio og
+                  styrketræning, som holder mig i form og styrker både krop og
+                  sind. Det giver energi, fokus og balance, og gør det lettere
+                  at tackle hverdagens udfordringer.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section class="traits-section">
+            <div class="traits-section__card traits-section__card--strengths">
+              <h2 class="traits-section__title">Styrker</h2>
+              <p>Som jeg er beskrevet ud fra andre:</p>
+              <br />
+              <p>
+                Ud fra mit sociale netværk har folk beskrevet mig som værende
+                <strong>respektfuld</strong> og en person med
+                <strong>god humor.</strong> <br />
+                <br />
+                Jeg er en meget <strong>ærlig og rolig</strong> person, hvis jeg
+                bliver spurgt ind til min mening. 
+              </p>
+            </div>
+
+            <div class="traits-section__card traits-section__card--weaknesses">
+              <h2 class="traits-section__title">Svagheder</h2>
+              <p>Som jeg er beskrevet ud fra andre:</p>
+              <br />
+              <ul>
+                <li>“Ikke give mig selv nok ‘credit’.”</li>
+                <li>
+                  “Du er rigtig god, men du føler tit de ting du gør, ikke er
+                  godt nok.”
+                </li>
+                <li>
+                  “Du tager tingene meget på dig, hvis folk f.eks. ikke har
+                  samme tempo som dig”.
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          <section class="kontakt_CTA_omMig cta-section">
+            <p>Interesseret i et samarbejde?</p>
+            <a href="kontaktMig.html" class="button">Se Kontakt side</a>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer_row">
+        <div class="quick_shortcuts">
+          <p>Jan Quoc Tran. 2025. All Rights Reserved.</p>
+        </div>
+
+        <div class="quick_shortcuts">
+          <p><strong>Sociale medier</strong></p>
+          <div class="icons">
+            <a
+              href="https://www.facebook.com/jan.tran.3?locale=da_DK"
+              target="_blank"
+              aria-label="Facebook"
+            >
+              <i class="fa-brands fa-square-facebook"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/jan_quoc_tran/"
+              target="_blank"
+              aria-label="Github"
+            >
+              <i class="fa-brands fa-square-github"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/jan-quoc-tran/"
+              target="_blank"
+              aria-label="LinkedIn"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="quick_shortcuts">
+          <p><strong>Kontakt</strong></p>
+          <p>jan.tran9@gmail.com</p>
+          <p>+45 52819684</p>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

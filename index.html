@@ -1,18 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JQT's Portfolio | Homepage </title>
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/portfolio.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-    <script src="./assets/js/app.js" defer> </script>
+    <script src="./assets/js/script.js" defer> </script>
 
 </head>
 <body>
     <header>
-    <!-- Navigation med Plated logo, titler på undersider, searchbar og search icon  -->
-        <nav>
+        <nav class="main-nav">
             <div class="menu">
                 <ul>
                     <li><a href="index.html" class="active"><strong>Forside</strong></a></li>
@@ -26,52 +25,152 @@
     </header>
 
     <main>
-        <section class="front_page_section_one">
-            <img src="./assets/img/point_right.png" alt="">
-            <div class="front_page_section_one_text">
-                <h1><strong>Jan Quoc Tran</strong></h1>
-                <h2>Front-end | UX/UI Designer</h2>
-                <p>Interesseret i at se noget af mit arbejde?</p>
-                <button class="button"><a href="overview.html">Se Case Studies</a></button>
-            </div>
-        </section>
+<section class="front_page_section_one">
+    <!-- Billedet har Jan selv taget  -->
+    <img src="./assets/img/jan_forside.png" alt="">
+    <div class="front_page_section_one_text">
+        <h1><strong>Jan Quoc Tran</strong></h1>
+        <h2>UX/UI Designer</h2>
+        <p>Jeg designer løsninger, der gør det nemt at komme <br> fra punkt A til B, med fokus på flow og funktion.</p>
+        <!-- Link til ikon: https://fontawesome.com/icons/location-dot?f=classic&s=solid -->
+        <p><i class="fa-solid fa-location-dot"></i> Lokation: Aalborg SV</p>
+        <p>Interesseret i at se noget af mit arbejde?</p>
+        <div class="button-group">
+            <a href="overview.html" class="button">Se Case Studies</a>
+            <a href="kontaktMig.html" class="button">Se Kontakt side</a>
+        </div>
+    </div>
 
-        <section class="two_image_section">
-            <div class="image_block">
-                <img src="./assets/img/fjedeKlasse.PNG" alt="Left image">
-                <button class="button"><a href="omMig.html">Se "Om Jan" Siden</a></button>
-            </div>
-            <div class="image_block">
-                <img src="./assets/img/gymKlasse.JPG" alt="Right image">
-                <button class="button"><a href="kontaktMig.html">Se "Kontakt" Siden</a></button>
-            </div>
-        </section>
+  </section>
+  
+  <div id="scroll_indicator">
+      <div class="circle">
+          <div class="arrow_animation"></div>
+      </div>
+  </div>
+
+  <section class="about_section">
+  <div class="about_background"></div>
+
+  <div class="about_container">
+
+    <div class="about_block">
+      <div class="about_image">
+        <!-- Billedet har Jan selv taget  -->
+        <img src="./assets/img/fjedeKlasse.PNG" alt="Jan som barn">
+      </div>
+      <div class="about_text">
+        <h2>Hvem jeg er</h2>
+        <p>
+          Jeg er en dedikerede og arbejdsom person, der har interesse for nye idéer og oplevelser. Jeg sætter pris på kreativitet, godt samarbejde og mennesker, der får mig til at smile.
+          
+        </p>
+        <p>
+         Jeg har interesse indenfor fodbold, og siden 1. klasse har mit kælenavn været ‘Lynkineseren’ på grund af min hurtighed på fodboldbanen. 
+        </p>
+        <a href="omMig.html" class="button">Se "Om Jan" siden</a>
+      </div>
+    </div>
+
+    <div class="about_block reverse">
+      <div class="about_text">
+        <h2>Samarbejd med mig</h2>
+        <p>
+          I ethvert projekt med flere deltagere spiller samarbejde en afgørende rolle for, hvordan idéer udvikles og realiseres.
+        </p>
+        <p>
+          Leder du efter en front-end designer til et konkret projekt, ønsker hjælp til at forbedre brugeroplevelsen
+          på din hjemmeside, eller udveksle idéer, så tag kontakt hos mig.
+        </p>
+        <a href="kontaktMig.html" class="button">Se Kontakt side</a>
+      </div>
+      <div class="about_image">
+        <!-- Billedet har Jan selv taget  -->
+        <img src="./assets/img/gymKlasse.JPG" alt="Jan portræt">
+      </div>
+    </div>
+
+  </div>
+</section>
+
+        
         <div class="line"></div>
 
         <section class="case_studies_section">
+            <div class="case_studies_background">
+                <!-- Billedet kan findes ved: https://www.flaticon.com/free-icon/pen_1250925?term=pen&page=1&position=4&origin=search&related_id=1250925 under creative commons-->
+                <div class="pencil"></div>
+                <!-- Billedet kan findes ved: https://www.vexels.com/png-svg/preview/157318/desktop-computer-icon-computer under creative commons -->
+                <div class="computer"></div>
+                <!-- Billedet kan findes ved: https://www.flaticon.com/free-icon/blueprint_4257674 under creative commons-->
+                <div class="blueprint"></div>
+            </div>
             <h2>Jan's Case Studies</h2>
 
             <div class="case_studies_cards">
                 <a href="blaaFestivalCase.html" class="card">
-                <h3>MakeBetterFood</h3>
-                <img src="./assets/img/jordbaerkage.png" alt="jordbær kage">
+                <h3>Den Blå Festival</h3>
+                <div class="image_wrapper">
+                <!-- Billedet kan findes ved: https://www.colourbox.com/search/find?q=guitarist&media_type=&editorial=&orientation=&resolution=&colour=&safesearch=&order=strict_constant_scores -->
+                <img src="./assets/img/guitar_player.png" alt="guitarist på scene">
+                <div class="overlay">
+                  <!-- Link til ikon: https://fontawesome.com/icons/html5?f=brands&s=solid -->
+                    <div class="icon_box">
+                    <i class="fa-brands fa-html5"></i>
+                    <p>HTML</p>
+                    </div>
+                    <!-- Link til ikon: https://fontawesome.com/icons/css?f=brands&s=solid -->
+                    <div class="icon_box">
+                    <i class="fa-brands fa-css"></i>
+                    <p>CSS</p>
+                    </div>
+                    <!-- Link til ikon: https://fontawesome.com/icons/js?f=brands&s=solid -->
+                    <div class="icon_box">
+                    <i class="fa-brands fa-square-js"></i>
+                    <p>JS</p>
+                    </div>
+                </div>
+                </div>
                 </a>
 
+                <!-- Billedet genereret via AI -->
                 <a href="fitTogetherCase.html" class="card">
-                <h3>RSOK Orienteringsklub</h3>
-                <img src="./assets/img/forest.png" alt="kvinde i skoven">
+                <h3>FitTogether</h3>
+                <div class="image_wrapper">
+                <img src="./assets/img/FitTogether.png" alt="vægt logo">
+                <div class="overlay">
+                    <div class="icon_box">
+                    <!-- Link til ikon: https://fontawesome.com/icons/compass-drafting?f=classic&s=solid -->
+                    <i class="fa-solid fa-compass-drafting"></i>
+                    <p>UX/UI</p>
+                    </div>
+                </div>
+                </div>
                 </a>
 
                 <a href="magiskJulCase.html" class="card">
                 <h3>Magisk Jul</h3>
-                <img src="./assets/img/christmas.png" alt="julepark">
+                <div class="image_wrapper">
+                  <!-- Billedet kan findes ved: https://unsplash.com/photos/red-lighted-candle-on-brown-wooden-frame-iKHXbvNHXPQ -->
+                <img src="./assets/img/christmas.jpg" alt="stearinlys">
+                <div class="overlay">
+                    <div class="icon_box">
+                    <i class="fa-brands fa-html5"></i>
+                    <p>HTML</p>
+                    </div>
+                    <div class="icon_box">
+                    <i class="fa-brands fa-css"></i>
+                    <p>CSS</p>
+                    </div>
+                </div>
+                </div>
                 </a>
             </div>
         </section>
     </main>
     
 
-    <footer>
+<footer>
     <div class="footer_row">
         <div class="quick_shortcuts">
             <p>Jan Quoc Tran. 2025. All Rights Reserved.</p>
@@ -81,12 +180,15 @@
         <p><strong>Sociale medier</strong></p>
         <div class="icons">
             <a href="https://www.facebook.com/jan.tran.3?locale=da_DK" target="_blank" aria-label="Facebook">
+              <!-- Link til ikon: https://fontawesome.com/icons/square-facebook?f=brands&s=solid-->
             <i class="fa-brands fa-square-facebook"></i>
             </a>
-            <a href="https://www.instagram.com/jan_quoc_tran/" target="_blank" aria-label="Instagram">
-            <i class="fa-brands fa-square-instagram"></i>
+            <a href="https://github.com/Lynkineseren" target="_blank" aria-label="Github">
+              <!-- Link til ikon: https://fontawesome.com/icons/github?f=brands&s=solid -->
+            <i class="fa-brands fa-square-github"></i>
             </a>
             <a href="https://www.linkedin.com/in/jan-quoc-tran/" target="_blank" aria-label="LinkedIn">
+              <!-- Link til ikon: https://fontawesome.com/icons/linkedin?f=brands&s=solid -->
             <i class="fa-brands fa-linkedin"></i>
             </a>
         </div>

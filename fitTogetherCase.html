@@ -1,59 +1,1132 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JQT's Portfolio | Homepage </title>
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-    <script src="./assets/js/app.js" defer> </script>
-
-</head>
-<body>
-    <header>
-    <!-- Navigation med Plated logo, titler på undersider, searchbar og search icon  -->
-        <nav>
-            <div class="menu">
-                <ul>
-                    <li><a href="index.html"><strong>Forside</strong></a></li>
-                    <li><a href="overview.html">Case Studies</a></li>
-                    <li><a href="omMig.html">Om Mig</a></li>
-                    <li><a href="kontaktMig.html">Kontakt</a></li>
-                </ul>
-            </div>
-        </nav>
-        <div class="line"></div>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JQT's Portfolio | FitTogether Case</title>
+    <link rel="stylesheet" href="./assets/css/portfolio.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <script src="./assets/js/script.js" defer></script>
+  </head>
+  <body class="fitTogetherCase">
+    <header id="top">
+      <nav class="main-nav">
+        <div class="menu">
+          <ul>
+            <li><a href="index.html">Forside</a></li>
+            <li>
+              <a href="overview.html" class="active"
+                ><strong>Case Studies</strong></a
+              >
+            </li>
+            <li><a href="omMig.html">Om Mig</a></li>
+            <li><a href="kontaktMig.html">Kontakt</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="line"></div>
     </header>
-    
+
+    <main>
+      <section class="breadcrumb">
+        <div>
+          <p>
+            <a href="./overview.html"
+              ><strong
+                ><i class="fa-solid fa-arrow-left"></i> Tilbage til case studies
+                oversigt</strong
+              ></a
+            >
+          </p>
+        </div>
+      </section>
+
+      <section class="projects-section-fit-together fade-in-left">
+        <div class="content">
+          <h1 class="fit_together_h1">FitTogether</h1>
+          <p>
+            Opgaven her var at designe og udvikle webappen FitTogether et
+            digitalt træningsfællesskab, der motiverer brugere gennem sociale
+            relationer og fælles mål. Processen omfattede brief, personas, OOUX,
+            user stories, acceptance criterias, user flows og wireflows for at
+            definere struktur og funktion.
+          </p>
+          <br />
+          <p>
+            Designet blev udviklet gennem skitser, wireframes, mock-ups og en
+            design- og brandguide, som tilsammen skal skabe en sammenhængende og
+            motiverende brugeroplevelse.
+          </p>
+        </div>
+        <div>
+          <!-- Billedet kan findes ved: https://www.google.com/search?q=fitness+coach&sca_esv=c5262307a89cf2d2&rlz=1C1MMCH_enDK1125DK1126&udm=2&sxsrf=AE3TifMu6E5oJ2i0O7dzXzpPt5jKT9xSog:1763103196061&source=lnt&tbs=sur:cl&sa=X&ved=2ahUKEwjHntCdh_GQAxWPA9sEHRMADCsQpwV6BAgFEB0&biw=1536&bih=730&dpr=1.25#vhid=93NAHPdkEtBT2M&vssid=mosaic under creative commons-->
+          <img
+            class="fade-in-left"
+            src="./assets/img/traening_guide.webp"
+            alt="gym trainer guides"
+          />
+        </div>
+      </section>
+
+      <section class="research-section">
+        <div class="research-wrap">
+          <aside class="research-nav">
+            <nav>
+              <p><strong>Indholdsfortegnelse</strong></p>
+              <ul>
+                <li><a href="#brief">Brief</a></li>
+                <li><a href="#personas_fitTogether">Personas</a></li>
+                <li><a href="#ooux">OOUX</a></li>
+                <li><a href="#user_stories">User Stories</a></li>
+                <li>
+                  <a href="#acceptance_criterias">Acceptance Criterias</a>
+                </li>
+                <li><a href="#user_flows">User Flows</a></li>
+                <li><a href="#wireflows">Wireflows</a></li>
+                <li><a href="#design">Design- og Brandguide</a></li>
+                <li><a href="#skitser_fitTogether">Skitser</a></li>
+                <li><a href="#wireframe_fitTogether">Wireframe</a></li>
+                <li><a href="#mock_ups_fitTogether">Mock-ups</a></li>
+              </ul>
+            </nav>
+          </aside>
+
+          <section class="research-content">
+            <section id="brief" class="accordion">
+              <h2>Brief</h2>
+              <p>
+                FitTogether er en digital fitnessplatform, der har til formål at
+                skabe motivation og fællesskab omkring træning uanset niveau.
+                Målet er at gøre træning mere menneskelig, støttende og social
+                ved at fokusere på udvikling i eget tempo fremfor konkurrence.
+                FitTogether's værdier er fællesskab, støtte og personlig udvikling
+                grundprincipper, der skal være med til at danne et fundament for hele
+                designprocessen.
+              </p>
+              <div class="accordion-box">
+                <button class="accordion-toggle">
+                  <span class="accordion-text">Se mere om Brief</span>
+                  <i class="fa-solid fa-arrow-down arrow"></i>
+                </button>
+                <div class="accordion-content">
+                  <p><strong>Klient og Kontekst</strong></p>
+                  <p>
+                    Maria Jensen (37) er ejer og grundlægger af FitTogether, en
+                    ny digital fitnessplatform til mobil, som er under
+                    udvikling. Med en baggrund som projektleder i et
+                    healthtech-startup og en livslang passion for bevægelse og
+                    fællesskab, har Maria dedikeret sin karriere til at gøre
+                    træning mere menneskelig og motiverende.
+                  </p>
+
+                  <br />
+
+                  <p>
+                    Ideen til FitTogether opstod ud fra hendes egen oplevelse
+                    af, at fitness ofte kan føles ensomt især for nybegyndere,
+                    der mangler støtte, og for rutinerede brugere, der savner
+                    fællesskab uden konkurrence.
+                  </p>
+
+                  <br />
+                  <p>
+                    Målet med FitTogether er at bygge et digitalt community,
+                    hvor brugere kan støtte hinanden i deres træning, dele
+                    erfaringer, give tips og råd, og finde motivation gennem
+                    ægte interaktion ikke “likes”, men reelle forbindelser.
+                  </p>
+
+                  <br />
+                  <div class="krav">
+                    <p><strong>Krav</strong></p>
+                    <ul>
+                      <li>
+                        Nybegyndere skal kunne finde lette, guidede programmer
+                        med visuelle forklaringer til hver øvelse.
+                      </li>
+                      <li>
+                        Rutinerede og dedikerede brugere skal kunne tilpasse
+                        programmer, ændre sværhedsgrad og fokusområde.
+                      </li>
+                      <li>
+                        Nybegyndere og rutinerede skal kunne gemme deres
+                        favoritprogrammer og modtage forslag til lignende
+                        træninger.
+                      </li>
+                      <li>
+                        Rutinerede og dedikerede skal kunne oprette egne
+                        programmer og redigere dem løbende.
+                      </li>
+                      <li>
+                        Alle brugere skal kunne logge træning og se fremskridt
+                        gennem simple grafer og statistik.
+                      </li>
+                      <li>
+                        Systemet skal kunne foreslå næste skridt fx sværere
+                        øvelser, længere varighed eller nye mål afhængigt af
+                        brugerens udvikling.
+                      </li>
+                      <li>
+                        Dedikerede brugere skal kunne dele deres egne
+                        programmer, som andre kan følge eller kommentere på.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section id="personas_fitTogether" class="accordion">
+  <h2>Personas</h2>
+  <p>
+    Den empiriske del af projektet bygger på tre personas: Sofie
+    (nybegynder), Mikkel (rutineret) og Camilla (dedikeret).
+    Personas repræsenterer forskellige niveauer af træningsrutine,
+    motivation og sociale behov.
+  </p>
+  <div class="accordion-box">
+    <button class="accordion-toggle">
+      <span class="accordion-text">Se mere om Personas</span>
+      <i class="fa-solid fa-arrow-down arrow"></i>
+    </button>
+    <div class="accordion-content">
+      <div class="persona-content">
+        <div class="persona-card-fit-together persona--sofie">
+          <div class="persona-story">
+            <div class="persona-history">
+              <h4 class="persona-history-title">Sofie's historie</h4>
+                                        <p>
+                            Sofie har aldrig været den sporty type. I gymnasiet
+                            hadede hun idræt, og på universitetet blev hendes
+                            liv ret stillesiddende.
+                          </p>
+                          <p>
+                            Efter hun startede på fuldtidsarbejde og begyndte at
+                            arbejde hjemmefra et par dage om ugen, mærkede hun,
+                            hvor meget kroppen faktisk savnede bevægelse. Hun
+                            begyndte at føle sig træt og ukoncentreret i løbet
+                            af dagen, og hendes søvn blev dårligere.
+                          </p>
+                          <p>
+                            Da en veninde foreslog at starte til holdtræning,
+                            prøvede Sofie et par gange men hun følte sig utilpas
+                            og langsom sammenlignet med de andre.
+                          </p>
+                          <p>
+                            Hun besluttede derfor at finde en måde at komme i
+                            gang på sine egne præmisser. Hun fandt et par
+                            YouTube-videoer og købte en yogamåtte. Det føltes
+                            godt, men ensomt og hun savner følelsen af støtte og
+                            fællesskab uden at skulle “deltage” aktivt.
+                          </p>
+                          <p>
+                            Sofie vil ikke have “summer body” eller sixpack. Hun
+                            vil føle sig frisk, stærk og stolt af sig selv. Hun
+                            bliver motiveret af små sejre , som at kunne tage 10
+                            minutter ekstra på gåturen eller mærke, at hun får
+                            bedre holdning. Hun drømmer om at gøre træning til
+                            en naturlig og tryg del af hverdagen, ikke et pres.
+                          </p>
+                          <p>
+                            Sofie’s mål på den kort sigtede plan er, at træne
+                            2–3 gange om ugen, føle sig mere aktiv og energisk.
+                            På langt sigt vil hun gøre træning til en vane, hun
+                            faktisk glæder sig til. I forhold til hendes fremtid
+                            med fitness vil hun se det som en del af hendes
+                            livsstil, måske endda begynde at inspirere andre
+                            nybegyndere gennem sit eget eksempel.
+                          </p>
+            </div>
+          </div>
+
+          <div class="persona-info">
+            <!-- Billederne for Personas er fundet ud fra siden: https://thispersondoesnotexist.com/ -->
+            <img src="./assets/img/sofie.png" alt="Sofie Madsen" class="persona-photo" />
+            <blockquote class="persona-quote">“Jeg prøver ikke at blive den bedste, jeg vil bare føle mig godt tilpas i min egen krop.”</blockquote>
+            <p class="persona-traits">Nysgerrig, reflekteret, omsorgsfuld, målbevidst, selvudviklende.</p>
+            <ul class="persona-details">
+              <li><i class="fa-regular fa-house"></i> Hjemby: Aarhus, Danmark</li>
+              <li><i class="fa-solid fa-location-dot"></i> Nuværende hjem: København N</li>
+              <li><i class="fa-regular fa-calendar-days"></i>Alder: 27 år</li>
+              <li><i class="fa-regular fa-heart"></i>Familie: Mor, far og en storesøster</li>
+              <li><i class="fa-solid fa-graduation-cap"></i>Uddannelse: Bachelor i Kommunikation</li>
+              <li><i class="fa-solid fa-briefcase"></i>Beskæftigelse: Junior Content Specialist</li>
+            </ul>
+            <p class="persona-definition"><i class="fa-solid fa-circle-info"></i> <br />En nybegynder i fitness er en person, der er i de
+                          første stadier af at integrere fysisk træning som en
+                          del af sin livsstil. Personen har begrænset erfaring
+                          med træningsrutiner, teknikker og udstyr, og søger
+                          ofte vejledning, struktur og motivation for at komme
+                          godt i gang.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="persona-card-fit-together persona--mikkel">
+        <div class="persona-story">
+          <div class="persona-history">
+            <h4 class="persona-history-title">Mikkels historie</h4>
+            <p>
+                          Mikkel begyndte at træne i starten af 20’erne, efter
+                          en skulderskade fra fodbold tvang ham til at stoppe
+                          med holdsport.
+                        </p>
+                        <p>
+                          Han fandt hurtigt ud af, at styrketræning gav ham både
+                          struktur og ro, og at han kunne bruge sin
+                          fysioterapeutiske viden til at forstå kroppen bedre.
+                        </p>
+                        <p>
+                          Han træner 4–5 gange om ugen, både i fitnesscenteret
+                          og udendørs. Han er ikke besat af tal eller PR’er, men
+                          elsker følelsen af kontrol og balance: at vide, han
+                          gør noget godt for sig selv.
+                        </p>
+                        <p>
+                          Mikkel bruger fitness som et mentalt frirum fra
+                          hverdagen. Han er ikke optaget af at vise sin træning
+                          frem, men kan godt lide at dele tips og erfaringer med
+                          ligesindede.
+                        </p>
+                        <p>
+                          For Mikkel handler træning om vedligeholdelse, velvære
+                          og udvikling. Han motiveres af følelsen af rutine — at
+                          kroppen føles stærk, og sindet klart.
+                        </p>
+                        <p>
+                          Han ser fitness som en form for selvdisciplin og
+                          mental træning: et sted, hvor han mærker sig selv og
+                          sin fremgang.
+                        </p>
+                        <p>
+                          Mikkel’s mål på den kort sigtede plan er, bevare sin
+                          rutine og holde sig skadefri. På langt sigt vil han
+                          fortsætte med at bruge træning som et mentalt frirum.
+                          I forhold til hans fremtid med fitness vil han
+                          inspirere andre til at finde glæden i konsistent,
+                          realistisk træning.
+                        </p>
+          </div>
+        </div>
+
+        <div class="persona-info">
+          <img src="./assets/img/mikkel.png" alt="Mikkel" class="persona-photo" />
+          <blockquote class="persona-quote">“Jeg elsker at presse mig selv, men holder også af restitution.”</blockquote>
+          <p class="persona-traits">Ambitiøs, målrettet, social, konkurrenceminded.</p>
+          <ul class="persona-details">
+            <li><i class="fa-regular fa-house"></i> Hjemby: Odense, Danmark</li>
+            <li><i class="fa-solid fa-location-dot"></i> Nuværende hjem: København</li>
+            <li><i class="fa-regular fa-calendar-days"></i>Alder: 30 år</li>
+            <li><i class="fa-regular fa-heart"></i>Familie: Single</li>
+            <li><i class="fa-solid fa-graduation-cap"></i>Uddannelse: Professionsbachelor i Fysioterapi</li>
+            <li><i class="fa-solid fa-briefcase"></i>Beskæftigelse: Fysioterapeut</li>
+          </ul>
+          <p class="persona-definition"><i class="fa-solid fa-circle-info"></i> <br />En rutineret fitness-go’er er en person, der har
+                        integreret træning som en fast del af sin livsstil. De
+                        har opbygget en solid forståelse for træningsteknik,
+                        restitution og kost, og træner regelmæssigt med et
+                        balanceret fokus på sundhed, styrke og velvære, ikke
+                        nødvendigvis konkurrence.</p>
+        </div>
+      </div>
+
+      <div class="persona-card-fit-together persona--camilla">
+        <div class="persona-story">
+          <div class="persona-history">
+            <h4 class="persona-history-title">Camillas historie</h4>
+            <p>
+                          Camilla begyndte at træne i fitnesscenteret som
+                          18-årig, oprindeligt for at komme i form efter
+                          gymnasiet.
+                        </p>
+                        <p>
+                          Hun blev hurtigt fascineret af, hvordan kroppen kunne
+                          formes og forbedres gennem målrettet træning og kost.
+                        </p>
+                        <p>
+                          Efter et par år begyndte hun at deltage i
+                          fitnesskonkurrencer og crossfit-events, og hun blev
+                          opslugt af tanken om at optimere både sin fysiske og
+                          mentale styrke.
+                        </p>
+                        <p>
+                          I dag arbejder hun som personlig træner, men ser
+                          stadig sin egen træning som noget helt personligt et
+                          frirum, hvor hun udfordrer sig selv og afprøver nye
+                          grænser.
+                        </p>
+                        <p>
+                          Camilla drives af selvforbedring, struktur og
+                          resultater. Hun elsker følelsen af progression at
+                          kunne løfte tungere, løbe hurtigere eller restituere
+                          bedre.
+                        </p>
+                        <p>
+                          Hun finder ro i planlægning og kontrol, og bliver
+                          motiveret af data, mål og konkurrence.Træning er for
+                          hende en livsstil, ikke en hobby.
+                        </p>
+                        <p>
+                          Camilla’s mål på den kort sigtede plan er, at
+                          kvalificere sig til sin næste crossfit-konkurrence. På
+                          langt sigt vil hun udvide sin coachingforretning og
+                          inspirere andre til at tage træning seriøst. I forhold
+                          til hans fremtid med fitness vil hun leve af sin
+                          passion og bygge et fællesskab omkring dedikation og
+                          disciplin.
+                        </p>
+          </div>
+        </div>
+
+        <div class="persona-info">
+          <img src="./assets/img/camilla.png" alt="Camilla" class="persona-photo" />
+          <blockquote class="persona-quote">“Disciplin slår motivation – hver eneste dag.”</blockquote>
+          <p class="persona-traits">Dedikeret, ambitiøs, inspirerende.</p>
+          <ul class="persona-details">
+            <li><i class="fa-regular fa-house"></i> Hjemby: Aalborg, Danmark</li>
+            <li><i class="fa-solid fa-location-dot"></i> Nuværende hjem: Aalborg SV</li>
+            <li><i class="fa-regular fa-calendar-days"></i>Alder: 26 år</li>
+            <li><i class="fa-regular fa-heart"></i>Familie: Single</li>
+            <li><i class="fa-solid fa-graduation-cap"></i>Uddannelse: Kandidat i Ernæring og Sundhed</li>
+            <li><i class="fa-solid fa-briefcase"></i>Beskæftigelse: Personlig træner og online coach</li>
+          </ul>
+          <p class="persona-definition"><i class="fa-solid fa-circle-info"></i> <br />En dedikeret fitness-go’er har gjort træning til en
+                        central del af sin identitet og hverdag. De sætter mål,
+                        måler fremskridt og søger konstant forbedring både
+                        fysisk og mentalt. Motivationen ligger i performance,
+                        mestring og selvdisciplin, og træning bliver ofte
+                        planlagt som en seriøs rutine på linje med arbejde eller
+                        studie.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+            <section id="ooux" class="accordion">
+              <h2>OOUX</h2>
+              <p>
+                Brugerdata fra FitTogether er organiseret i en OOUX-struktur,
+                hvor nøgleobjekter som programmer, øvelser, brugerprofiler og
+                fællesskabsindlæg kortlægges sammen med deres relationer. Denne
+                tilgang giver et klart overblik over, hvordan appens
+                informationsarkitektur understøtter brugernes behov og
+                motivation. Samtidig gør det muligt at formidle
+                designbeslutninger professionelt til interessenter og vise,
+                hvordan struktur og indhold hænger sammen med brugernes
+                fitnessrejse.
+              </p>
+              <div class="accordion-box">
+                <button class="accordion-toggle">
+                  <span class="accordion-text">Se mere om OOUX</span>
+                  <i class="fa-solid fa-arrow-down arrow"></i>
+                </button>
+
+                <div class="accordion-content">
+                  <p>
+                    Disse billeder illustrerer, hvordan mine 5 objekter:
+                    Rutineret fitness go’er, Tips og råd, Fitness stories,
+                    Personlig udvikling og træningsplan, relaterer sig til
+                    hinanden i ORCA-modellen. Samspillet mellem objekterne
+                    viser, hvordan de understøtter hinanden og skaber værdi for
+                    målgruppen.
+                  </p>
+                  <div class="image-wrapper">
+                    <img
+                      src="./assets/img/ooux_1.png"
+                      alt="ORCA model Objekter"
+                      class="accordion-image"
+                    />
+                  </div>
+                  <div class="image-wrapper">
+                    <img
+                      src="./assets/img/ooux_2.png"
+                      alt="ORCA model Relations"
+                      class="accordion-image"
+                    />
+                  </div>
+
+                  <br />
+                  <br />
+
+                  <p>
+                    Her fokuseres på mine calls to action i forhold til de 5
+                    objekter. Billederne viser, hvordan handlinger og engagement
+                    kan aktiveres, og hvordan hver CTA er tilpasset objektets
+                    karakter og mål.
+                  </p>
+                  <div class="image-wrapper">
+                    <img
+                      src="./assets/img/ooux_3.png"
+                      alt="ORCA model Relations"
+                      class="accordion-image"
+                    />
+                  </div>
+                  <div
+                    class="image-wrapper preview-active"
+                    data-modal="modal-4"
+                  >
+                    <img
+                      src="./assets/img/ooux_4.png"
+                      alt="ORCA model Relations"
+                      class="accordion-image"
+                    />
+                    <i class="fas fa-search-plus expand-icon"></i>
+                  </div>
+
+                  <br />
+                  <br />
+
+                  <p>
+                    Det sidste billede fremhæver Attributes-delen, hvor de
+                    centrale egenskaber og kvaliteter ved hvert objekt
+                    præsenteres. Dette giver et overblik over, hvordan hvert
+                    objekt skiller sig ud, og hvilke styrker der kan fremhæves i
+                    kommunikation og indhold.
+                  </p>
+
+                  <div class="image-wrapper">
+                    <img
+                      src="./assets/img/ooux_orca_attributes.png"
+                      alt="ORCA model attributes"
+                      class="accordion-image"
+                    />
+                  </div>
+                </div>
+
+                <!-- Modal -->
+
+                <div class="picture_expand" id="modal-4">
+                  <div class="modal-box">
+                    <img
+                      src="./assets/img/ooux_4.png"
+                      alt="ORCA model Relations"
+                      class="modal-image-content"
+                    />
+                    <i class="fas fa-times buttonClose"></i>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section id="user_stories" class="accordion">
+              <h2>User Stories</h2>
+              <p>
+                På baggrund af FitTogether’s målgruppe er brugerindsigterne
+                omsat til konkrete user stories, der beskriver funktioner og
+                handlinger, appen skal kunne levere for at opfylde de tre
+                personas’ behov nybegyndere, rutinerede og dedikerede brugere.
+              </p>
+              <div class="accordion-box">
+                <button class="accordion-toggle">
+                  <span class="accordion-text">Se mere om User Stories</span>
+                  <i class="fa-solid fa-arrow-down arrow"></i>
+                </button>
+                <div class="accordion-content">
+                  <div class="story">
+                    <p class="user-story">
+                      1. Som nybegynder vil jeg følge en rutineret bruger, så
+                      jeg kan få inspiration og forstå, hvordan øvelser udføres
+                      korrekt.
+                    </p>
+                    <p class="success-metric">
+                      <i class="fas fa-check check-icon"></i>Succesmetrik:
+                      Brugeren følger mindst én rutineret bruger inden for
+                      første uge, og åbner mindst én story eller profil fra dem.
+                    </p>
+                  </div>
+
+                  <div class="story">
+                    <p class="user-story">
+                      2. Som nybegynder vil jeg se tip & råd, så jeg kan lære
+                      grundlæggende teknikker og undgå skader.
+                    </p>
+                    <p class="success-metric">
+                      <i class="fas fa-check check-icon"></i>Succesmetrik:
+                      Brugeren læser mindst 3 tips inden for de første 7 dage og
+                      markerer mindst ét tip som "klar til brug".
+                    </p>
+                  </div>
+
+                  <div class="story">
+                    <p class="user-story">
+                      3. Som nybegynder vil jeg starte min personlige fitness
+                      journey, så jeg kan logge mine fremskridt og følge min
+                      udvikling over tid.
+                    </p>
+                    <p class="success-metric">
+                      <i class="fas fa-check check-icon"></i>Succesmetrik:
+                      Brugeren opretter sin første milepæl eller session inden
+                      for de første 3 dage efter tilmelding.
+                    </p>
+                  </div>
+
+                  <div class="story">
+                    <p class="user-story">
+                      4. Som nybegynder vil jeg prøve en træningsplan, så jeg
+                      kan følge en struktureret træning uden at skulle planlægge
+                      selv.
+                    </p>
+                    <p class="success-metric">
+                      <i class="fas fa-check check-icon"></i>Succesmetrik:
+                      Brugeren starter mindst én træningsplan og logger
+                      fuldførelsen af minimum én træningssession inden for
+                      første uge.
+                    </p>
+                  </div>
+
+                  <div class="story">
+                    <p class="user-story">
+                      5. Som rutineret bruger vil jeg dele en fitness story, så
+                      jeg kan dokumentere min progression og inspirere andre.
+                    </p>
+                    <p class="success-metric">
+                      <i class="fas fa-check check-icon"></i>Succesmetrik:
+                      Brugeren opretter mindst én story pr. måned, som mindst én
+                      anden bruger interagerer med (like eller kommentar).
+                    </p>
+                  </div>
+
+                  <div class="story">
+                    <p class="user-story">
+                      6. Som rutineret bruger vil jeg anvende avancerede tips &
+                      råd, så jeg kan optimere min træning og teknik.
+                    </p>
+                    <p class="success-metric">
+                      <i class="fas fa-check check-icon"></i>Succesmetrik:
+                      Brugeren markerer mindst 3 tips som "anvendt" og logger
+                      fremskridt, der korresponderer med tipsene.
+                    </p>
+                  </div>
+
+                  <div class="story">
+                    <p class="user-story">
+                      7. Som rutineret bruger vil jeg tilpasse min personlige
+                      udvikling / journey, så mine mål og milepæle passer til
+                      mit niveau.
+                    </p>
+                    <p class="success-metric">
+                      <i class="fas fa-check check-icon"></i>Succesmetrik:
+                      Brugeren opdaterer mindst én milepæl eller mål i sin
+                      journey hver uge og kan se progression i loggen.
+                    </p>
+                  </div>
+
+                  <div class="story">
+                    <p class="user-story">
+                      8. Som rutineret bruger vil jeg følge eller ændre en
+                      træningsplan, så den passer til min progression og
+                      træningsmål.
+                    </p>
+                    <p class="success-metric">
+                      <i class="fas fa-check check-icon"></i>Succesmetrik:
+                      Brugeren tilpasser mindst én træningsplan og gennemfører
+                      mindst én session, der reflekterer ændringerne.
+                    </p>
+                  </div>
+
+                  <div class="story">
+                    <p class="user-story">
+                      9. Som dedikeret bruger vil jeg dele og kommentere fitness
+                      stories, så jeg kan konkurrere, dele erfaringer og
+                      motivere andre.
+                    </p>
+                    <p class="success-metric">
+                      <i class="fas fa-check check-icon"></i>Succesmetrik:
+                      Brugeren deler mindst én story pr. uge og kommenterer
+                      mindst én story fra andre brugere.
+                    </p>
+                  </div>
+
+                  <div class="story">
+                    <p class="user-story">
+                      10. Som dedikeret bruger vil jeg oprette egne avancerede
+                      tips & råd, så jeg kan hjælpe andre og positionere mig som
+                      ekspert i fællesskabet.
+                    </p>
+                    <p class="success-metric">
+                      <i class="fas fa-check check-icon"></i>Succesmetrik:
+                      Brugeren opretter mindst 2 tips pr. måned, som mindst én
+                      anden bruger anvender eller gemmer.
+                    </p>
+                  </div>
+
+                  <div class="story">
+                    <p class="user-story">
+                      11. Som dedikeret bruger vil jeg logge og analysere min
+                      personlige udvikling / journey, så jeg kan optimere
+                      træning og følge konkurrencepræstationer.
+                    </p>
+                    <p class="success-metric">
+                      <i class="fas fa-check check-icon"></i>Succesmetrik:
+                      Brugeren logger mindst 3 træningssessioner om ugen og kan
+                      generere mindst én rapport over fremskridt hver måned.
+                    </p>
+                  </div>
+
+                  <div class="story">
+                    <p class="user-story">
+                      12. Som dedikeret bruger vil jeg oprette og eksperimentere
+                      med træningsplaner, så jeg kan finde den mest effektive
+                      metode til at nå mine mål hurtigere end andre.
+                    </p>
+                    <p class="success-metric">
+                      <i class="fas fa-check check-icon"></i>Succesmetrik:
+                      Brugeren opretter mindst én ny plan om måneden og
+                      gennemfører mindst 80% af planens sessioner i den
+                      planlagte periode.
+                    </p>
+                  </div>
+
+                  <br />
+
+                  <p>
+                    Jeg organiserer så user stories for at få et klart overblik
+                    over de vigtigste funktioner og behov for nybegyndere,
+                    rutinerede og dedikerede brugere. De forskellige stories er
+                    prioriteret efter betydning, så de mest kritiske behov
+                    kommer først, og det er disse, jeg viderebearbejder med
+                    acceptance criteria for at sikre, at appen leverer reel
+                    værdi og understøtter fællesskab og motivation i
+                    brugerrejsen.
+                  </p>
+
+                  <img
+                    src="./assets/img/organized_userStories.png"
+                    alt="Organisering af forrige user story"
+                    class="accordion-image"
+                  />
+                </div>
+              </div>
+            </section>
+
+            <section id="acceptance_criterias" class="accordion">
+              <h2>Acceptance Criterias</h2>
+              <p>
+                For de valgte user stories er de tilknyttet tydelige acceptance
+                criterias, der beskriver, hvornår kravene anses for opfyldt. For
+                FitTogether betyder det, at funktioner som logning af træning,
+                progressionsoverblik, deling af programmer og forslag til næste
+                skridt testes mod brugernes behov.
+              </p>
+              <div class="accordion-box">
+                <button class="accordion-toggle">
+                  <span class="accordion-text"
+                    >Se mere om Acceptance Criterias</span
+                  >
+                  <i class="fa-solid fa-arrow-down arrow"></i>
+                </button>
+                <div class="accordion-content">
+                  <div class="fitness-requirement">
+                    <p class="fitness-story">
+                      3. Som nybegynder vil jeg starte min personlige fitness
+                      journey, så jeg kan logge mine fremskridt og følge min
+                      udvikling over tid.
+                    </p>
+                    <ul class="fitness-details">
+                      <li>
+                        <i class="fas fa-cogs criteria-icon icon-functional"></i
+            Funktionelt:</strong> Brugeren kan oprette sin
+                        personlige journey med navn, startdato og første
+                        milepæl.
+                      </li>
+                      <li>
+                        <i
+                          class="fas fa-triangle-exclamation criteria-icon icon-error"
+                        ></i
+                        ><strong>Edge/Fejl:</strong> Systemet håndterer
+                        manglende input eller ugyldige datoer med en
+                        fejlmeddelelse.
+                      </li>
+                      <li>
+                        <i class="fas fa-chart-line criteria-icon icon-data"></i
+                        ><strong>Data/Visning:</strong> Journey vises i en
+                        overskuelig tidslinje med milepæle; første milepæl
+                        fremhæves.
+                      </li>
+                      <li>
+                        <i
+                          class="fas fa-comment-dots criteria-icon icon-feedback"
+                        ></i
+                        ><strong>Feedback:</strong> Brugeren får en bekræftelse
+                        ("Din fitness journey er oprettet") og visuel indikator,
+                        at journey'en er aktiv.
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="fitness-requirement">
+                    <p class="fitness-story">
+                      7. Som rutineret bruger vil jeg tilpasse min personlige
+                      udvikling / journey, så mine mål og milepæle passer til
+                      mit niveau.
+                    </p>
+                    <ul class="fitness-details">
+                      <li>
+                        <i class="fas fa-cogs criteria-icon icon-functional"></i
+                        ><strong>Funktionelt:</strong> Brugeren kan tilføje,
+                        redigere og slette milepæle og mål i sin journey.
+                      </li>
+                      <li>
+                        <i
+                          class="fas fa-triangle-exclamation criteria-icon icon-error"
+                        ></i
+                        ><strong>Edge/Fejl:</strong> Systemet forhindrer
+                        duplikat-milepæle og viser fejl, hvis dato/tekst er
+                        ugyldig.
+                      </li>
+                      <li>
+                        <i class="fas fa-chart-line criteria-icon icon-data"></i
+                        ><strong>Data/Visning:</strong> Opdaterede milepæle
+                        vises med korrekt status (planlagt, gennemført) i
+                        tidslinjen.
+                      </li>
+                      <li>
+                        <i
+                          class="fas fa-comment-dots criteria-icon icon-feedback"
+                        ></i
+                        ><strong>Feedback:</strong> Brugeren får besked ("Din
+                        milepæl er opdateret") og visuel indikator for
+                        ændringer.
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="fitness-requirement">
+                    <p class="fitness-story">
+                      9. Som dedikeret bruger vil jeg dele og kommentere fitness
+                      stories, så jeg kan konkurrere, dele erfaringer og
+                      motivere andre.
+                    </p>
+                    <ul class="fitness-details">
+                      <li>
+                        <i class="fas fa-cogs criteria-icon icon-functional"></i
+                        ><strong>Funktionelt:</strong> Brugeren kan oprette en
+                        story med tekst og billeder/video og tilføje kommentarer
+                        på andres stories.
+                      </li>
+                      <li>
+                        <i
+                          class="fas fa-triangle-exclamation criteria-icon icon-error"
+                        ></i
+                        ><strong>Edge/Fejl:</strong> Systemet forhindrer upload
+                        af ugyldige filer og tomme kommentarer.
+                      </li>
+                      <li>
+                        <i class="fas fa-chart-line criteria-icon icon-data"></i
+                        ><strong>Data/Visning:</strong> Story vises i feed med
+                        korrekt bruger, tid og antal kommentarer; kommentarer
+                        vises kronologisk.
+                      </li>
+                      <li>
+                        <i
+                          class="fas fa-comment-dots criteria-icon icon-feedback"
+                        ></i
+                        ><strong>Feedback:</strong> Brugeren får bekræftelse
+                        ("Din story er delt") og notifikation, når andre
+                        kommenterer.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section id="user_flows" class="accordion">
+              <h2>User Flows</h2>
+              <p>
+                Jeg tog udgangspunkt i user story nr. 9, hvor en dedikeret
+                bruger ønsker at dele og kommentere fitness stories for at
+                motivere andre. Ved at kortlægge denne proces kunne jeg
+                tydeliggøre, hvordan brugeren bevæger sig gennem appen, og
+                hvordan funktionerne understøtter fællesskab og engagement i
+                FitTogether.
+              </p>
+              <div class="accordion-box">
+                <button class="accordion-toggle">
+                  <span class="accordion-text">Se mere om User Flows</span>
+                  <i class="fa-solid fa-arrow-down arrow"></i>
+                </button>
+                <div class="accordion-content">
+                  <img
+                    src="./assets/img/userFlows.png"
+                    alt="userflow af bruger interaktion af fitness app"
+                    class="accordion-image"
+                  />
+                </div>
+              </div>
+            </section>
+
+            <section id="wireflows" class="accordion">
+              <h2>Wireflows</h2>
+              <p>
+                Jeg arbejdede med wireflows ud fra perspektivet af en bruger,
+                der skulle oprette en story. Processen gjorde det tydeligt,
+                hvilke trin og funktioner der skulle til for at gøre det nemt og
+                intuitivt at dele en oplevelse, samtidig med at jeg kunne teste,
+                hvordan layout og navigation understøtter brugernes lyst til at
+                bidrage aktivt i FitTogether.
+              </p>
+              <div class="accordion-box">
+                <button class="accordion-toggle">
+                  <span class="accordion-text">Se mere om Wireflows</span>
+                  <i class="fa-solid fa-arrow-down arrow"></i>
+                </button>
+                <div class="accordion-content">
+                  <img
+                    src="./assets/img/wireflow_1.png"
+                    alt="Wireflow del 1"
+                    class="accordion-image"
+                  />
+                  <img
+                    src="./assets/img/wireflow_2.png"
+                    alt="Wireflow del 2"
+                    class="accordion-image"
+                  />
+                </div>
+              </div>
+            </section>
+
+            <section id="design" class="accordion">
+              <h2>Design- og Brandguide</h2>
+              <p>
+                Jeg fastsatte fonte, tekststørrelser, farver og komponenter, der
+                passer til FitTogether’s tema om fællesskab og motivation.
+                Logoet blev skabt med hjælp fra AI. Guiden sikrer et
+                genkendeligt og sammenhængende udtryk, så brugeren oplever appen
+                som intuitiv og troværdig.
+              </p>
+              <div class="accordion-box">
+                <button class="accordion-toggle">
+                  <span class="accordion-text"
+                    >Se mere om Design- og Brandguide</span
+                  >
+                  <i class="fa-solid fa-arrow-down arrow"></i>
+                </button>
+                <div class="accordion-content">
+                  <img
+                    src="./assets/img/design4.png"
+                    alt="Logoer til fitness app"
+                    class="accordion-image"
+                  />
+                  <img
+                    src="./assets/img/design1.png"
+                    alt="Fonts til fitness app"
+                    class="accordion-image"
+                  />
+                  <img
+                    src="./assets/img/design2.png"
+                    alt="regler og farver til fitness app"
+                    class="accordion-image"
+                  />
+                  <img
+                    src="./assets/img/design3.png"
+                    alt="Komponenter til fitness app"
+                    class="accordion-image"
+                  />
+                </div>
+              </div>
+            </section>
+
+            <section id="skitser_fitTogether" class="accordion">
+              <h2>Skitser</h2>
+              <p>
+                Jeg startede processen med digitale skitser, hvor jeg hurtigt kunne forme de første idéer til, hvordan FitTogether skulle fungere i praksis, også vha min design- og brandguide. Her afprøvede jeg flere layoutretninger og fokusområder, især omkring træningsformer og sociale features, såsom personlige træningshistorier.
+              </p>
+              <div class="accordion-box">
+                <button class="accordion-toggle">
+                  <span class="accordion-text">Se mere om Skitser</span>
+                  <i class="fa-solid fa-arrow-down arrow"></i>
+                </button>
+                <div class="accordion-content">
+                  <img
+                    src="./assets/img/skitser1.png"
+                    alt="skitser til festival app"
+                    class="accordion-image"
+                  />
+                  <img
+                    src="./assets/img/skitser2.png"
+                    alt="skitser til festival app"
+                    class="accordion-image"
+                  />
+                </div>
+              </div>
+            </section>
+
+            <section id="wireframe_fitTogether" class="accordion">
+              <h2>Wireframes</h2>
+              <p>
+                På baggrund af skitserne opbyggede jeg wireframes, hvor vi begyndte at arbejde mere konkret med navigation, informationshierarki og brugerflow. Her blev funktioner som Tips & Råd, personlige træningshistorier organiseret, så brugerne får en logisk og let tilgang til fællesskabet.
+              </p>
+              <div class="accordion-box">
+                <button class="accordion-toggle">
+                  <span class="accordion-text">Se mere om Wireframes</span>
+                  <i class="fa-solid fa-arrow-down arrow"></i>
+                </button>
+                <div class="accordion-content">
+                  <img
+                    src="./assets/img/wireframe1.png"
+                    alt="wireframes til festival app"
+                    class="accordion-image"
+                  />
+                  <img
+                    src="./assets/img/wireframe2.png"
+                    alt="wireframes til festival app"
+                    class="accordion-image"
+                  />
+                </div>
+              </div>
+            </section>
+
+            <section id="mock_ups_fitTogether" class="accordion">
+              <h2>Mock-ups</h2>
+              <p>
+                Da strukturen lå fast, udviklede jeg mock-ups, hvor FitTogether fik sit endelige visuelle udtryk. Jeg tilføjede farver, typografi, komponenter og billedstil fra min design- og brandguide, så designet afspejler appens fokus på fællesskab, motivation og energi.
+              </p>
+              <div class="accordion-box">
+                <button class="accordion-toggle">
+                  <span class="accordion-text">Se mere om Mock-ups</span>
+                  <i class="fa-solid fa-arrow-down arrow"></i>
+                </button>
+                <div class="accordion-content">
+                  <img
+                    src="./assets/img/mock_ups_fitTogether1.png"
+                    alt="mock ups til festival app"
+                    class="accordion-image"
+                  />
+                  <img
+                    src="./assets/img/mock_ups_fitTogether2.png"
+                    alt="mock ups til festival app"
+                    class="accordion-image"
+                  />
+                </div>
+              </div>
+              <a href="#top" class="back-to-top"
+                >Tilbage til toppen <i class="fa-solid fa-arrow-up"></i
+              ></a>
+            </section>
+          </section>
+        </div>
+      </section>
+      <div class="line"></div>
+
+              <section class="case_studies_section">
+            <div class="case_studies_background">
+                <!-- Billedet kan findes ved: https://www.flaticon.com/free-icon/pen_1250925?term=pen&page=1&position=4&origin=search&related_id=1250925 under creative commons-->
+                <div class="pencil"></div>
+                <!-- Billedet kan findes ved: https://www.vexels.com/png-svg/preview/157318/desktop-computer-icon-computer under creative commons -->
+                <div class="computer"></div>
+                <!-- Billedet kan findes ved: https://www.flaticon.com/free-icon/blueprint_4257674 under creative commons-->
+                <div class="blueprint"></div>
+            </div>
+            <h2>Jan's Case Studies</h2>
+
+            <div class="case_studies_cards">
+                <a href="blaaFestivalCase.html" class="card">
+                <h3>Den Blå Festival</h3>
+                <div class="image_wrapper">
+                <!-- Billedet kan findes ved: https://www.colourbox.com/search/find?q=guitarist&media_type=&editorial=&orientation=&resolution=&colour=&safesearch=&order=strict_constant_scores -->
+                <img src="./assets/img/guitar_player.png" alt="guitarist på scene">
+                <div class="overlay">
+                  <!-- Link til ikon: https://fontawesome.com/icons/html5?f=brands&s=solid -->
+                    <div class="icon_box">
+                    <i class="fa-brands fa-html5"></i>
+                    <p>HTML</p>
+                    </div>
+                    <!-- Link til ikon: https://fontawesome.com/icons/css?f=brands&s=solid -->
+                    <div class="icon_box">
+                    <i class="fa-brands fa-css"></i>
+                    <p>CSS</p>
+                    </div>
+                    <!-- Link til ikon: https://fontawesome.com/icons/js?f=brands&s=solid -->
+                    <div class="icon_box">
+                    <i class="fa-brands fa-square-js"></i>
+                    <p>JS</p>
+                    </div>
+                </div>
+                </div>
+                </a>
+
+                <!-- Billedet genereret via AI -->
+                <a href="fitTogetherCase.html" class="card">
+                <h3>FitTogether</h3>
+                <div class="image_wrapper">
+                <img src="./assets/img/FitTogether.png" alt="vægt logo">
+                <div class="overlay">
+                    <div class="icon_box">
+                    <!-- Link til ikon: https://fontawesome.com/icons/compass-drafting?f=classic&s=solid -->
+                    <i class="fa-solid fa-compass-drafting"></i>
+                    <p>UX/UI</p>
+                    </div>
+                </div>
+                </div>
+                </a>
+
+                <a href="magiskJulCase.html" class="card">
+                <h3>Magisk Jul</h3>
+                <div class="image_wrapper">
+                  <!-- Billedet kan findes ved: https://unsplash.com/photos/red-lighted-candle-on-brown-wooden-frame-iKHXbvNHXPQ -->
+                <img src="./assets/img/christmas.jpg" alt="stearinlys">
+                <div class="overlay">
+                    <div class="icon_box">
+                    <i class="fa-brands fa-html5"></i>
+                    <p>HTML</p>
+                    </div>
+                    <div class="icon_box">
+                    <i class="fa-brands fa-css"></i>
+                    <p>CSS</p>
+                    </div>
+                </div>
+                </div>
+                </a>
+            </div>
+        </section>
+    </main>
 
     <footer>
-    <div class="footer_row">
+      <div class="footer_row">
         <div class="quick_shortcuts">
-            <p>Jan Quoc Tran. 2025. All Rights Reserved.</p>
+          <p>Jan Quoc Tran. 2025. All Rights Reserved.</p>
         </div>
 
         <div class="quick_shortcuts">
-        <p><strong>Sociale medier</strong></p>
-        <div class="icons">
-            <a href="https://www.facebook.com/jan.tran.3?locale=da_DK" target="_blank" aria-label="Facebook">
-            <i class="fa-brands fa-square-facebook"></i>
+          <p><strong>Sociale medier</strong></p>
+          <div class="icons">
+            <a
+              href="https://www.facebook.com/jan.tran.3?locale=da_DK"
+              target="_blank"
+              aria-label="Facebook"
+            >
+              <i class="fa-brands fa-square-facebook"></i>
             </a>
-            <a href="https://www.instagram.com/jan_quoc_tran/" target="_blank" aria-label="Instagram">
-            <i class="fa-brands fa-square-instagram"></i>
+            <a
+              href="https://github.com/Lynkineseren"
+              target="_blank"
+              aria-label="Github"
+            >
+              <i class="fa-brands fa-square-github"></i>
             </a>
-            <a href="https://www.linkedin.com/in/jan-quoc-tran/" target="_blank" aria-label="LinkedIn">
-            <i class="fa-brands fa-linkedin"></i>
+            <a
+              href="https://www.linkedin.com/in/jan-quoc-tran/"
+              target="_blank"
+              aria-label="LinkedIn"
+            >
+              <i class="fa-brands fa-linkedin"></i>
             </a>
-        </div>
+          </div>
         </div>
 
         <div class="quick_shortcuts">
-            <p><strong>Kontakt</strong></p>
-            <p>jan.tran9@gmail.com</p>
-            <p>+45 52819684</p>
+          <p><strong>Kontakt</strong></p>
+          <p>jan.tran9@gmail.com</p>
+          <p>+45 52819684</p>
         </div>
-    </div>
-
-</footer>
-</body>
+      </div>
+    </footer>
+  </body>
 </html>
